@@ -1,23 +1,29 @@
 # Security and Sensitive-Source Policy
 
-## Do not commit
+## Do not commit, paste, or attach
 
 - GitHub tokens, passwords, private keys, cookies, or `.env` credentials;
 - private/native manuscript content or repository exports without the author’s explicit permission;
 - personal information, paid/locked adaptation panels, or unlawfully obtained source material;
 - credentials copied from browser profiles, Git configuration, or external services.
 
+A credential posted in a chat, issue, pull request, or document must be treated as compromised even if it is later deleted from local files. Revoke and rotate it immediately.
+
 ## Report a concern
 
-Until an authorized GitHub repository and maintainer contact exist, report a suspected secret or sensitive-source exposure directly to the project author through the agreed private channel. Do not open a public issue containing the secret or material.
+Use a private maintainer channel for a suspected secret or sensitive-source exposure. Do **not** open an issue containing the secret, private material, or the full reproduction path. The private repository does not make sensitive disclosure appropriate.
 
-If a secret is committed locally:
+## Remediation sequence
 
-1. stop any push immediately;
+If a secret or sensitive material is committed, uploaded, or shared:
+
+1. stop further pushes and public sharing;
 2. revoke/rotate the credential with its provider;
-3. remove it from the working tree and Git history before any remote publication;
-4. document only the remediation status, never the secret itself.
+3. remove it from the working tree and Git history before any further external publication;
+4. rerun `python3 tools/validate_github_governance.py` and `python3 tools/validate_all.py`;
+5. document only the remediation status, never the secret itself;
+6. assess whether repository visibility, external logs, or collaborator access require additional cleanup.
 
 ## Publication boundary
 
-This project contains recovered public evidence and locally accepted, non-public creative material. Local Git tracking does not authorize public release. Follow `PROJECT_CONTROL.md` for the required authority ladder.
+This private GitHub repository contains recovered public evidence and locally accepted, non-public creative material. Private Git tracking does not authorize public release. Follow `PROJECT_CONTROL.md` and `PUBLICATION_AND_DATA_CLASSIFICATION.md` for the authority ladder and external-sharing controls.

@@ -1,0 +1,50 @@
+name: Continuity or mechanics correction
+description: Report a specific continuity, causal, mechanics, or character-voice issue.
+title: "[Continuity] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This is a provenance-preserving workshop. Do not paste private manuscripts, locked adaptation material, or unsupported source claims.
+  - type: dropdown
+    id: layer
+    attributes:
+      label: Affected layer
+      options:
+        - Recovered public evidence
+        - Frozen V1 historical material
+        - Protected V2 material
+        - Locally accepted C48-C55 snapshot
+        - Governance/documentation only
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Exact file and section
+      placeholder: "path/to/file.md — heading, paragraph, or line range"
+    validations:
+      required: true
+  - type: textarea
+    id: observation
+    attributes:
+      label: Observed issue
+      description: State what conflicts; quote only the minimum necessary project text.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence and authority
+      description: Cite an existing project file, audit, or direct author instruction. Do not infer private/native-source facts.
+    validations:
+      required: true
+  - type: checkboxes
+    id: safeguards
+    attributes:
+      label: Safeguards checked
+      options:
+        - label: I did not treat local acceptance as public publication.
+          required: true
+        - label: I did not propose C56/C61 or future-source allocation without direct authority.
+          required: true

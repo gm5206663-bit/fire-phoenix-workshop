@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Run the complete Fire Phoenix local validation suite in authority order."""
+"""Run the complete Fire Phoenix local validation suite in preservation and governance order."""
 from __future__ import annotations
 
 import subprocess
@@ -8,6 +8,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 CHECKS = (
+    ("GitHub governance and credential screen", ("tools/validate_github_governance.py",)),
     ("Recovered public evidence", ("tools/verify_public_recovery.py",)),
     ("Recovered workshop baseline", ("tools/validate_workshop.py",)),
     ("Frozen V1 historical package", ("tools/validate_replacement_line_48_60.py",)),
@@ -33,7 +34,7 @@ def main() -> int:
         print("Failed:", ", ".join(failed))
         return 1
     print("FIRE_PHOENIX_VALIDATION_SUITE: PASS")
-    print(f"{len(CHECKS)} checks passed in authority order.")
+    print(f"{len(CHECKS)} checks passed in preservation and governance order.")
     return 0
 
 

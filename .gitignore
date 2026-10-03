@@ -19,6 +19,9 @@ Thumbs.db
 *.swo
 *~
 
+# Local-only verified Git bundle backups.
+backups/
+
 # Temporary recovery/download artifacts; source archives are intentionally retained.
 *.part
 *.tmp

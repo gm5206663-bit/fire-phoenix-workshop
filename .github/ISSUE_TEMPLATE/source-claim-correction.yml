@@ -1,0 +1,43 @@
+name: Source-claim or provenance correction
+description: Correct a provenance record, source attribution, hash, recovery claim, or adaptation-evidence classification.
+title: "[Source claim] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use only lawfully accessible, directly viewed evidence. Do not upload paid/locked panels, private repository exports, credentials, or personal data.
+  - type: input
+    id: location
+    attributes:
+      label: Exact project file and claim
+      placeholder: "path/to/file — claim or table row"
+    validations:
+      required: true
+  - type: dropdown
+    id: claim_type
+    attributes:
+      label: Claim type
+      options:
+        - Public Git recovery/provenance
+        - Direct novel proxy reading
+        - Official adaptation-access limitation
+        - Character/mechanics continuity
+        - Other documented evidence
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: Correction and evidence
+      description: Supply a stable public URL or existing project evidence. Explain what was directly observed versus inferred.
+    validations:
+      required: true
+  - type: checkboxes
+    id: safeguards
+    attributes:
+      label: Evidence safeguards
+      options:
+        - label: I am not claiming access to a private/native repository.
+          required: true
+        - label: I am not using inaccessible adaptation material as evidence.
+          required: true

@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security or sensitive-source concern
+    url: https://github.com/gm5206663-bit/fire-phoenix-workshop/blob/main/SECURITY.md
+    about: Do not post credentials, private manuscripts, or locked-source material in an issue.
+  - name: Project-control and publication boundary
+    url: https://github.com/gm5206663-bit/fire-phoenix-workshop/blob/main/PROJECT_CONTROL.md
+    about: Read this before proposing publication, a new chapter, or a source-allocation change.

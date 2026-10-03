@@ -2,7 +2,7 @@
 
 **Current status:** `LOCAL_ACCEPTED_NOT_PUBLIC`  
 **Effective date:** 2026-10-03  
-**Git status:** local management only; no remote configured, no GitHub push authorized.  
+**Git status:** private GitHub mirror established; `main` and the local-acceptance tag were pushed on 2026-10-03. Future pushes remain authority-gated.
 **Public recovery status:** unchanged and hash-verified.  
 **C61:** not authorized.
 
@@ -40,7 +40,7 @@ The protected source, claim audit, craft diagnosis, and line pass remain in `lat
 - overwrite `sources/storyos_current_public_layer/`;
 - alter recovered public `state.json`, `state.txt`, gate/rules/decisions, source files, or recovery provenance;
 - delete frozen V1 late-rebuild files, historical contracts, audit receipts, rejected drafts, or archives;
-- publish anything to GitHub, create a remote, or authorize a release/PR;
+- authorize public publication, a release, public visibility, Pages, or any future GitHub push without direct author approval;
 - authorize C56, C61, future-source allocation, or adaptation claims.
 
 ## 3. Authority order
@@ -70,6 +70,7 @@ Older root navigation files may describe the former V1 C48–C60 author-review l
 Run the complete suite with `python3 tools/validate_all.py` (or `make validate`). The suite executes:
 
 ```bash
+python3 tools/validate_github_governance.py
 python3 tools/verify_public_recovery.py
 python3 tools/validate_workshop.py
 python3 tools/validate_replacement_line_48_60.py

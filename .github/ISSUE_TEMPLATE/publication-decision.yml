@@ -1,0 +1,48 @@
+name: Publication or acceptance decision
+description: Record a proposed decision that could affect accepted prose, public publication, repository visibility, or release scope.
+title: "[Decision] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Local acceptance, private Git tracking, and public StoryOS application are separate decisions. This form cannot itself authorize any of them.
+  - type: dropdown
+    id: decision_type
+    attributes:
+      label: Decision requested
+      options:
+        - Local acceptance snapshot
+        - Private GitHub operational change
+        - Public-layer application proposal
+        - Repository visibility/release change
+        - New chapter or source-allocation authorization
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Exact scope and affected files
+    validations:
+      required: true
+  - type: textarea
+    id: authority
+    attributes:
+      label: Direct author authority
+      description: Link the dated instruction or decision record. Inference is not authority.
+    validations:
+      required: true
+  - type: textarea
+    id: validation
+    attributes:
+      label: Required preservation/validation plan
+    validations:
+      required: true
+  - type: checkboxes
+    id: boundary
+    attributes:
+      label: Boundary acknowledgement
+      options:
+        - label: I understand this issue is a proposal/record, not an automatic publication authorization.
+          required: true
+        - label: I understand C61 and future-source allocation remain blocked unless separately authorized.
+          required: true

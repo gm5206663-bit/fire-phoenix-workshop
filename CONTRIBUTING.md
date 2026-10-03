@@ -4,9 +4,10 @@
 
 1. `PROJECT_CONTROL.md` — current authority and hard boundaries.
 2. `PROJECT_COMPREHENSION_AND_MANAGEMENT_PLAN_2026-10-03.md` — layer map and management rationale.
-3. `accepted_replacement_layers/2026-10-03_option_A_v2_contiguous_C48_C55/ACCEPTANCE_RECORD_2026-10-03.md` — scope of the locally accepted V2 line.
+3. `PUBLICATION_AND_DATA_CLASSIFICATION.md` — what may be preserved, reviewed, or shared.
+4. `accepted_replacement_layers/2026-10-03_option_A_v2_contiguous_C48_C55/ACCEPTANCE_RECORD_2026-10-03.md` — scope of the locally accepted V2 line.
 
-This is a provenance-preserving workshop. A change that is mechanically tidy but collapses recovered public evidence, frozen V1 history, protected V2 source, and local acceptance into one unlabelled copy is not acceptable.
+This is a provenance-preserving workshop. A change that collapses recovered public evidence, frozen V1 history, protected V2 source, and local acceptance into one unlabelled copy is not acceptable.
 
 ## Change rules
 
@@ -16,6 +17,7 @@ This is a provenance-preserving workshop. A change that is mechanically tidy but
 - Do not create C56/C61 or allocate later source material without new direct authority.
 - Do not add invented mechanics, future-source outcomes, unverified adaptation claims, secrets, private repository contents, or credentials.
 - Preserve rejected/archived material rather than deleting it to make the tree look simpler.
+- Use the supplied issue forms for continuity, source-claim, and publication-decision records; an issue never creates creative or publication authority.
 
 ## Required local checks
 
@@ -24,11 +26,14 @@ Run the complete suite before committing relevant work:
 ```bash
 python3 tools/validate_all.py
 # or: make validate
+# optional one-time local enforcement:
+bash tools/install_local_hooks.sh
 ```
 
-The suite runs these individual checks in authority order:
+The suite includes GitHub-governance/security checks plus these story/preservation validators:
 
 ```bash
+python3 tools/validate_github_governance.py
 python3 tools/verify_public_recovery.py
 python3 tools/validate_workshop.py
 python3 tools/validate_replacement_line_48_60.py
@@ -45,6 +50,7 @@ Use narrow commits with a clear scope, for example:
 
 - `docs: establish local V2 project control`
 - `acceptance: record Option A C48-C55 snapshot`
-- `ci: add provenance and V2 validation workflow`
+- `ci: harden provenance and GitHub validation`
+- `security: update sensitive-source policy`
 
-A pull request should state its authority, whether it touches a protected layer, and which validators were run. The included PR template enforces this distinction.
+A pull request should state its authority, whether it touches a protected layer, and which validators were run. `CODEOWNERS` provides a default private-review map; enable mandatory code-owner review only after confirming the collaborator workflow in `GITHUB_ADMIN_SETTINGS_CHECKLIST.md`.

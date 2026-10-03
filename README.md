@@ -4,7 +4,7 @@
 **Recovered:** 2026-09-27  
 **Purpose:** retain every identified public Fire Phoenix project artifact locally, with source provenance and quarantine boundaries preserved.
 
-> **Current local project status (2026-10-03):** the author-selected V2 Option A C48–C55 line is locally accepted but not public, not pushed, and not a C61 authorization. Read `PROJECT_CONTROL.md` before editing, accepting, publishing, or continuing anything.
+> **Current project status (2026-10-03):** the author-selected V2 Option A C48–C55 line is locally accepted, mirrored only to a private GitHub repository, and remains **not public** and **not a C61 authorization**. Read `PROJECT_CONTROL.md` and `PUBLICATION_AND_DATA_CLASSIFICATION.md` before editing, accepting, sharing, publishing, or continuing anything.
 
 ## What is here
 
@@ -32,6 +32,10 @@ This is not a simplified summary. It is a verified public-source workshop:
 8. `GITHUB_MANAGEMENT.md` — local-Git posture, GitHub-ready controls, and external-push boundary.
 9. `LOCAL_GIT_INITIALIZATION_RECEIPT_2026-10-03.md` — local commits, validation, tag, and quarantine receipt.
 10. `GITHUB_REMOTE_PUBLICATION_RECEIPT_2026-10-03.md` — private remote creation and initial-push receipt.
+11. `PUBLICATION_AND_DATA_CLASSIFICATION.md` — share/publication controls for every project layer.
+12. `GITHUB_ADMIN_SETTINGS_CHECKLIST.md` — remaining private-repository settings and branch-rules checklist.
+13. `BACKUP_AND_RECOVERY.md` — verified local Git-bundle backup and recovery procedure.
+14. `GITHUB_UPGRADE_AUDIT_2026-10-03.md` — current Git/GitHub audit, improvements, and remaining admin-only actions.
 
 ## Preserved public story truth
 
@@ -50,7 +54,7 @@ The recovered public edge above remains preserved evidence, not the active local
 
 `accepted_replacement_layers/2026-10-03_option_A_v2_contiguous_C48_C55/`
 
-It preserves V2’s eight causal units, the held-Zoysia / unstable-ape divergence, and the C61 fence. It does **not** overwrite public StoryOS C48–C52, alter recovery provenance, create a remote, or authorize a GitHub push. The controlling details are in `PROJECT_CONTROL.md`.
+It preserves V2’s eight causal units, the held-Zoysia / unstable-ape divergence, and the C61 fence. Its private GitHub mirror does **not** overwrite public StoryOS C48–C52, alter recovery provenance, create public publication authority, or authorize C56/C61. The controlling details are in `PROJECT_CONTROL.md` and `PUBLICATION_AND_DATA_CLASSIFICATION.md`.
 
 ## Historical V1 author-review replacement record
 

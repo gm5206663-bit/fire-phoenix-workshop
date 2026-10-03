@@ -7,13 +7,14 @@
 
 ## Repository posture
 
-This project should remain **private by default** if/when a GitHub repository is created. The workspace contains non-public local creative material, recovery archives, and detailed source-analysis records. Public visibility must be a separate author decision after a publication and licensing review.
+This private repository must remain **private by default**. The workspace contains non-public local creative material, recovery archives, and detailed source-analysis records. Public visibility must be a separate author decision after a publication and licensing review. `NOTICE.md` and `PUBLICATION_AND_DATA_CLASSIFICATION.md` explain why no public release/license is added automatically.
 
 Recommended future repository settings:
 
 - default branch: `main`;
-- require pull requests and passing `Validate Fire Phoenix workshop` checks before merging;
-- restrict direct pushes to `main`;
+- create the `main` ruleset in `GITHUB_ADMIN_SETTINGS_CHECKLIST.md` after the first successful remote Actions run;
+- require the **Provenance and current-line checks** status check before collaborator merges;
+- restrict force-pushes, deletion, and direct collaborator pushes to `main`;
 - enable secret scanning and push protection when available;
 - keep Actions permissions read-only by default;
 - do not enable automatic releases or Pages without separate authorization.
@@ -24,11 +25,12 @@ Recommended future repository settings:
 - `.github/workflows/validate.yml` for recovery, V1-history, V2-current, staging, and acceptance checks;
 - PR template, contribution policy, security policy, and project-control authority record;
 - a dated locally accepted V2 Option A C48–C55 layer with hash-pinned provenance;
-- a local-only acceptance tag, `local-accepted-v2-option-a-2026-10-03`, which explicitly does not imply public release;
+- a local-acceptance tag, `local-accepted-v2-option-a-2026-10-03`, which explicitly does not imply public release;
 - `LOCAL_GIT_INITIALIZATION_RECEIPT_2026-10-03.md`, recording local commits, validation, and repository integrity;
 - the quarantined rejected Dorm333-only Chapter-53 prose remains locally preserved but intentionally ignored by its nested quarantine `.gitignore`; it is not part of the staged remote-ready tree;
 - an approved private remote and initial `main`/local-acceptance-tag push, recorded in `GITHUB_REMOTE_PUBLICATION_RECEIPT_2026-10-03.md`;
-- `tools/configure_github_remote.sh`, which restores the approved non-secret `origin` URL when this sandbox resets transient Git configuration.
+- `tools/configure_github_remote.sh`, which restores the approved non-secret `origin` URL when this sandbox resets transient Git configuration;
+- SHA-pinned Actions, Dependabot monitoring for GitHub Actions, private issue forms, `CODEOWNERS`, backup tooling, and an administrator settings checklist.
 
 ## What is intentionally not done
 

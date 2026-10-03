@@ -1,6 +1,6 @@
-.PHONY: validate validate-current validate-recovery
+.PHONY: validate validate-current validate-recovery validate-github backup
 
-# Run all recovery, historical, V2, staging, and accepted-snapshot checks.
+# Run governance, recovery, historical, V2, staging, and accepted-snapshot checks.
 validate:
 	python3 tools/validate_all.py
 
@@ -13,3 +13,11 @@ validate-current:
 validate-recovery:
 	python3 tools/verify_public_recovery.py
 	python3 tools/validate_workshop.py
+
+# Check GitHub workflow hardening, governance assets, and tracked-content credential screen.
+validate-github:
+	python3 tools/validate_github_governance.py
+
+# Create a verified local-only Git bundle in ignored backups/.
+backup:
+	bash tools/create_git_bundle_backup.sh
