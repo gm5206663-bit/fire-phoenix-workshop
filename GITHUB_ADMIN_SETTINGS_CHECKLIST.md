@@ -4,7 +4,7 @@ This is the remaining GitHub-side checklist. It requires an authenticated reposi
 
 ## Keep / enable
 
-- [ ] Repository visibility is **Public** only after `GITHUB_PUBLIC_VISIBILITY_AUTHORIZATION_2026-10-03.md` is executed and recorded.
+- [x] Repository visibility is **Public** under `GITHUB_PUBLIC_VISIBILITY_AUTHORIZATION_2026-10-03.md`.
 - [ ] Issues remain enabled for the supplied public issue forms.
 - [ ] GitHub Actions is enabled with default workflow token permissions set to **read repository contents**.
 - [ ] Secret scanning and push protection are enabled if available for the account/plan.
@@ -15,13 +15,13 @@ This is the remaining GitHub-side checklist. It requires an authenticated reposi
 
 **Visibility-dependent step:** the 2026-10-03 API attempt returned `403` while the repository was private: GitHub branch protection required GitHub Pro or public visibility. Public visibility is now separately authorized. After visibility is confirmed, retry the protection/ruleset request and record its result; do not claim branch protection until GitHub accepts it.
 
-After public visibility is confirmed, create a ruleset/protection policy targeting `main` with:
+Public branch protection was accepted on 2026-10-03. It applies the following policy to `main`:
 
-- [ ] Block force pushes.
-- [ ] Block branch deletion.
-- [ ] Require linear history.
-- [ ] Require conversation resolution for pull requests.
-- [ ] Require the **Provenance and current-line checks** status check before merge.
+- [x] Block force pushes.
+- [x] Block branch deletion.
+- [x] Require linear history.
+- [x] Require conversation resolution for pull requests.
+- [x] Require the **Provenance and current-line checks** status check before merge.
 - [ ] Require pull requests for collaborators. For a sole maintainer, retain an explicit owner/admin bypass rather than locking yourself out.
 - [ ] Add required code-owner review only after confirming the `CODEOWNERS` mapping and collaborator workflow.
 

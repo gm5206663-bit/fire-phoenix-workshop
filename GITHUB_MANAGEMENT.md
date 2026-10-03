@@ -1,6 +1,6 @@
 # GitHub Management Plan — Fire Phoenix
 
-**Current mode:** public GitHub repository authorized by `GITHUB_PUBLIC_VISIBILITY_AUTHORIZATION_2026-10-03.md`.
+**Current mode:** public GitHub repository executed under `GITHUB_PUBLIC_VISIBILITY_AUTHORIZATION_2026-10-03.md`.
 **Remote:** `https://github.com/gm5206663-bit/fire-phoenix-workshop.git`
 **Default branch:** `main`
 **StoryOS public layer:** unchanged; GitHub visibility is not StoryOS application.
