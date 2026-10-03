@@ -13,7 +13,9 @@ This is the remaining GitHub-side checklist. It requires an authenticated reposi
 
 ## `main` ruleset after the first successful Actions run
 
-Create a ruleset targeting `main` with:
+**Current account limitation:** the 2026-10-03 API attempt returned `403`: GitHub branch protection for this private repository requires GitHub Pro or public visibility. Do **not** make the repository public to obtain this feature. Until a private-plan upgrade is explicitly approved, retain the private repository, CI workflow, local hooks, and required validation discipline.
+
+If/when a private-plan upgrade makes rules available, create a ruleset targeting `main` with:
 
 - [ ] Block force pushes.
 - [ ] Block branch deletion.

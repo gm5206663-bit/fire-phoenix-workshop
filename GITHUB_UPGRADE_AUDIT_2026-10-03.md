@@ -29,7 +29,8 @@ After this upgrade is pushed and the first Actions run is visibly successful, us
 
 - create the private label taxonomy and optional Project board;
 - enable secret scanning/push protection and Dependabot alerts where the account plan supports them;
-- establish the `main` ruleset with force-push/deletion protection and the validation status check;
+- review `GITHUB_ADMIN_CONFIGURATION_RECEIPT_2026-10-03.md`: GitHub returned `403` for private branch protection on the current plan, so do not make the repository public to work around it;
+- if a private-plan upgrade is later approved, establish the `main` ruleset with force-push/deletion protection and the validation status check;
 - decide whether collaborators justify mandatory pull-request/code-owner review.
 
 ## Deliberate non-actions

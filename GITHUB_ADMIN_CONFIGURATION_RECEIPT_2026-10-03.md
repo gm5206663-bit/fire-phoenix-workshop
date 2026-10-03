@@ -39,8 +39,8 @@
 ## Interpretation
 
 - HTTP `200`, `201`, `202`, or `204` records a GitHub-accepted configuration action. A `422` label result normally means the label already existed; other non-success codes are retained above for manual follow-up rather than silently treated as success.
-- `main_branch_protection` controls force-push/deletion, linear history, conversation resolution, and the named validation status check. Administrator bypass remains available while this is a single-maintainer repository.
-- The workflow state is an immediate observation only. Check GitHub Actions for the final conclusion before relying on collaborator merge protections.
+- `main_branch_protection` returned `403`: it is **not enabled**. GitHub reports that this private repository needs GitHub Pro (or public visibility) for that feature. Public visibility is not authorized; retain the private repository and use local hooks/CI until a paid-plan decision is made.
+- The governance-upgrade workflow run completed successfully. The later receipt-commit run should still be checked in GitHub Actions before relying on it as a recurring remote check.
 - Dependabot/security endpoints depend on repository eligibility and account-plan settings; their response codes do not imply secret scanning/push protection was enabled.
 
 ## Still intentionally not done

@@ -12,9 +12,9 @@ This private repository must remain **private by default**. The workspace contai
 Recommended future repository settings:
 
 - default branch: `main`;
-- create the `main` ruleset in `GITHUB_ADMIN_SETTINGS_CHECKLIST.md` after the first successful remote Actions run;
-- require the **Provenance and current-line checks** status check before collaborator merges;
-- restrict force-pushes, deletion, and direct collaborator pushes to `main`;
+- if the account gains private-repository branch-protection access, create the `main` ruleset in `GITHUB_ADMIN_SETTINGS_CHECKLIST.md` after a successful remote Actions run;
+- then require the **Provenance and current-line checks** status check before collaborator merges;
+- until then, rely on the private-repository boundary, SHA-pinned CI, and installed local validation hooks rather than making the repository public.
 - enable secret scanning and push protection when available;
 - keep Actions permissions read-only by default;
 - do not enable automatic releases or Pages without separate authorization.
