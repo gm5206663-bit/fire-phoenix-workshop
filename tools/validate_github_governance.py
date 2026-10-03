@@ -28,6 +28,7 @@ REQUIRED_FILES = (
     "tools/install_local_hooks.sh",
     "LOCAL_DEVELOPER_SETUP.md",
     "GITHUB_UPGRADE_AUDIT_2026-10-03.md",
+    "GITHUB_PUBLIC_VISIBILITY_AUTHORIZATION_2026-10-03.md",
 )
 
 REQUIRED_VALIDATORS = (
@@ -106,8 +107,8 @@ def main() -> int:
         failures.append("CODEOWNERS lacks the repository owner")
 
     readme = (ROOT / "README.md").read_text(encoding="utf-8") if (ROOT / "README.md").is_file() else ""
-    if "private GitHub" not in readme or "not public" not in readme:
-        failures.append("README does not clearly distinguish private mirror from public publication")
+    if "publicly mirrored on GitHub" not in readme or "not a public StoryOS application" not in readme:
+        failures.append("README does not clearly distinguish public repository visibility from StoryOS publication")
 
     for path in repository_files():
         try:

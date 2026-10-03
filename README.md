@@ -4,7 +4,7 @@
 **Recovered:** 2026-09-27  
 **Purpose:** retain every identified public Fire Phoenix project artifact locally, with source provenance and quarantine boundaries preserved.
 
-> **Current project status (2026-10-03):** the author-selected V2 Option A C48–C55 line is locally accepted, mirrored only to a private GitHub repository, and remains **not public** and **not a C61 authorization**. Read `PROJECT_CONTROL.md` and `PUBLICATION_AND_DATA_CLASSIFICATION.md` before editing, accepting, sharing, publishing, or continuing anything.
+> **Current project status (2026-10-03):** the author-selected V2 Option A C48–C55 line is locally accepted and the full tracked workshop is publicly mirrored on GitHub by direct author decision. The V2 line remains **not a public StoryOS application** and **not a C61 authorization**. Read `PROJECT_CONTROL.md`, `GITHUB_PUBLIC_VISIBILITY_AUTHORIZATION_2026-10-03.md`, and `PUBLICATION_AND_DATA_CLASSIFICATION.md` before editing, accepting, sharing, publishing, or continuing anything.
 
 ## What is here
 
@@ -23,7 +23,7 @@ This is not a simplified summary. It is a verified public-source workshop:
 ## Start here
 
 1. `PROJECT_CONTROL.md` — current authority, accepted local V2 C48–C55 edge, hard fences, and required checks.
-2. `accepted_replacement_layers/2026-10-03_option_A_v2_contiguous_C48_C55/` — locally accepted reader-facing replacement snapshot; not public.
+2. `accepted_replacement_layers/2026-10-03_option_A_v2_contiguous_C48_C55/` — locally accepted reader-facing replacement snapshot; publicly visible in GitHub but not a public StoryOS application.
 3. `late_arc_rebuild/rebuild_v2/README_REBUILD_MAP.md` — protected V2 provenance, source mapping, audit pointers, and non-applying promotion package.
 4. `ACTIVE_START_HERE.md` — recovered/public baseline and historical V1 navigation; read only after the current control document.
 5. `SARA_WORKING_CONTEXT.md` — standing continuity principles.
@@ -31,11 +31,12 @@ This is not a simplified summary. It is a verified public-source workshop:
 7. `provenance/PUBLIC_RECOVERY_MANIFEST.json` — exact original URL, ref, source path, and SHA for every recovered file.
 8. `GITHUB_MANAGEMENT.md` — local-Git posture, GitHub-ready controls, and external-push boundary.
 9. `LOCAL_GIT_INITIALIZATION_RECEIPT_2026-10-03.md` — local commits, validation, tag, and quarantine receipt.
-10. `GITHUB_REMOTE_PUBLICATION_RECEIPT_2026-10-03.md` — private remote creation and initial-push receipt.
+10. `GITHUB_REMOTE_PUBLICATION_RECEIPT_2026-10-03.md` — historical private-remote creation and initial-push receipt.
 11. `PUBLICATION_AND_DATA_CLASSIFICATION.md` — share/publication controls for every project layer.
-12. `GITHUB_ADMIN_SETTINGS_CHECKLIST.md` — remaining private-repository settings and branch-rules checklist.
+12. `GITHUB_ADMIN_SETTINGS_CHECKLIST.md` — repository settings and branch-rules checklist.
 13. `BACKUP_AND_RECOVERY.md` — verified local Git-bundle backup and recovery procedure.
 14. `GITHUB_UPGRADE_AUDIT_2026-10-03.md` — current Git/GitHub audit, improvements, and remaining admin-only actions.
+15. `GITHUB_PUBLIC_VISIBILITY_AUTHORIZATION_2026-10-03.md` — explicit scope, exclusions, and pre-publication safety record.
 
 ## Preserved public story truth
 
@@ -54,7 +55,7 @@ The recovered public edge above remains preserved evidence, not the active local
 
 `accepted_replacement_layers/2026-10-03_option_A_v2_contiguous_C48_C55/`
 
-It preserves V2’s eight causal units, the held-Zoysia / unstable-ape divergence, and the C61 fence. Its private GitHub mirror does **not** overwrite public StoryOS C48–C52, alter recovery provenance, create public publication authority, or authorize C56/C61. The controlling details are in `PROJECT_CONTROL.md` and `PUBLICATION_AND_DATA_CLASSIFICATION.md`.
+It preserves V2’s eight causal units, the held-Zoysia / unstable-ape divergence, and the C61 fence. The tracked workshop is publicly visible on GitHub by direct author decision, but that repository visibility does **not** overwrite public StoryOS C48–C52, alter recovery provenance, create public StoryOS publication authority, or authorize C56/C61. The controlling details are in `PROJECT_CONTROL.md`, `GITHUB_PUBLIC_VISIBILITY_AUTHORIZATION_2026-10-03.md`, and `PUBLICATION_AND_DATA_CLASSIFICATION.md`.
 
 ## Historical V1 author-review replacement record
 

@@ -11,7 +11,7 @@ A credential posted in a chat, issue, pull request, or document must be treated 
 
 ## Report a concern
 
-Use a private maintainer channel for a suspected secret or sensitive-source exposure. Do **not** open an issue containing the secret, private material, or the full reproduction path. The private repository does not make sensitive disclosure appropriate.
+Use a direct maintainer channel for a suspected secret or sensitive-source exposure. Do **not** open a public issue containing the secret, private material, or the full reproduction path. Public repository visibility does not make sensitive disclosure appropriate.
 
 ## Remediation sequence
 
@@ -26,4 +26,4 @@ If a secret or sensitive material is committed, uploaded, or shared:
 
 ## Publication boundary
 
-This private GitHub repository contains recovered public evidence and locally accepted, non-public creative material. Private Git tracking does not authorize public release. Follow `PROJECT_CONTROL.md` and `PUBLICATION_AND_DATA_CLASSIFICATION.md` for the authority ladder and external-sharing controls.
+This public GitHub repository contains recovered public evidence and locally accepted creative material under the explicit visibility authorization. Repository visibility does not authorize StoryOS application, public releases, C56/C61 work, or additional external sharing beyond the tracked repository. Follow `PROJECT_CONTROL.md`, `GITHUB_PUBLIC_VISIBILITY_AUTHORIZATION_2026-10-03.md`, and `PUBLICATION_AND_DATA_CLASSIFICATION.md` for the authority ladder and controls.

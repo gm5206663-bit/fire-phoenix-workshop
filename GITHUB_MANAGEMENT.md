@@ -1,20 +1,20 @@
 # GitHub Management Plan — Fire Phoenix
 
-**Current mode:** private GitHub repository established and initially pushed on 2026-10-03.  
-**Remote:** `https://github.com/gm5206663-bit/fire-phoenix-workshop.git`  
-**Default branch:** `main`  
-**Public recovery layer:** unchanged; the external repository is private.
+**Current mode:** public GitHub repository authorized by `GITHUB_PUBLIC_VISIBILITY_AUTHORIZATION_2026-10-03.md`.
+**Remote:** `https://github.com/gm5206663-bit/fire-phoenix-workshop.git`
+**Default branch:** `main`
+**StoryOS public layer:** unchanged; GitHub visibility is not StoryOS application.
 
 ## Repository posture
 
-This private repository must remain **private by default**. The workspace contains non-public local creative material, recovery archives, and detailed source-analysis records. Public visibility must be a separate author decision after a publication and licensing review. `NOTICE.md` and `PUBLICATION_AND_DATA_CLASSIFICATION.md` explain why no public release/license is added automatically.
+Public GitHub visibility was separately authorized on 2026-10-03 for the tracked repository only. It exposes the entire tracked workshop/history, so `GITHUB_PUBLIC_VISIBILITY_AUTHORIZATION_2026-10-03.md`, `NOTICE.md`, and `PUBLICATION_AND_DATA_CLASSIFICATION.md` control the distinction between repository visibility and StoryOS/public-story application. No new public release/license is added automatically.
 
 Recommended future repository settings:
 
 - default branch: `main`;
-- if the account gains private-repository branch-protection access, create the `main` ruleset in `GITHUB_ADMIN_SETTINGS_CHECKLIST.md` after a successful remote Actions run;
-- then require the **Provenance and current-line checks** status check before collaborator merges;
-- until then, rely on the private-repository boundary, SHA-pinned CI, and installed local validation hooks rather than making the repository public.
+- after public visibility is applied, create the `main` protection/ruleset in `GITHUB_ADMIN_SETTINGS_CHECKLIST.md` with the verified **Provenance and current-line checks** status check;
+- require the validation check before collaborator merges while retaining explicit owner administration;
+- rely on SHA-pinned CI and installed local validation hooks in addition to public branch protection.
 - enable secret scanning and push protection when available;
 - keep Actions permissions read-only by default;
 - do not enable automatic releases or Pages without separate authorization.
@@ -28,13 +28,13 @@ Recommended future repository settings:
 - a local-acceptance tag, `local-accepted-v2-option-a-2026-10-03`, which explicitly does not imply public release;
 - `LOCAL_GIT_INITIALIZATION_RECEIPT_2026-10-03.md`, recording local commits, validation, and repository integrity;
 - the quarantined rejected Dorm333-only Chapter-53 prose remains locally preserved but intentionally ignored by its nested quarantine `.gitignore`; it is not part of the staged remote-ready tree;
-- an approved private remote and initial `main`/local-acceptance-tag push, recorded in `GITHUB_REMOTE_PUBLICATION_RECEIPT_2026-10-03.md`;
+- an initially private remote and initial `main`/local-acceptance-tag push, recorded in `GITHUB_REMOTE_PUBLICATION_RECEIPT_2026-10-03.md`;
 - `tools/configure_github_remote.sh`, which restores the approved non-secret `origin` URL when this sandbox resets transient Git configuration;
-- SHA-pinned Actions, Dependabot monitoring for GitHub Actions, private issue forms, `CODEOWNERS`, backup tooling, and an administrator settings checklist.
+- SHA-pinned Actions, Dependabot monitoring for GitHub Actions, issue forms, `CODEOWNERS`, backup tooling, and an administrator settings checklist.
 
 ## What is intentionally not done
 
-- no public repository, public release, Pages site, or public publication action was created;
+- no GitHub Release, Pages site, public Project board, public Discussions space, webhook, or public StoryOS application was created;
 - no GitHub issue, PR, release, project board, deploy key, webhook, or automation token was created;
 - no recovered public layer was changed or published.
 
@@ -42,7 +42,7 @@ No persistent GitHub credential is stored in this workspace. The destination was
 
 ## Authorized future remote procedure
 
-For a future explicitly authorized push, first restore/check the approved private remote:
+For a future explicitly authorized push, first restore/check the approved public remote:
 
 ```bash
 bash tools/configure_github_remote.sh
@@ -50,7 +50,7 @@ git remote -v
 git push -u origin main
 ```
 
-Before that action, re-run all checks in `CONTRIBUTING.md`, inspect `git status`, confirm the remote with `git remote -v`, and verify that the repository visibility is private unless the author explicitly approves public visibility.
+Before that action, re-run all checks in `CONTRIBUTING.md`, inspect `git status`, confirm the remote with `git remote -v`, and verify that the repository visibility matches the dated author authorization.
 
 ## Layer-aware review model
 

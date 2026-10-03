@@ -1,6 +1,6 @@
 # GitHub Project and Label Setup
 
-This file is a private-repository operating plan. It does not authorize a public project board or public issues.
+This file is a public-repository operating plan. It does not authorize a public StoryOS application, public release, or public Project board beyond the repository/issue visibility decision.
 
 ## Recommended labels
 

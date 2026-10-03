@@ -53,4 +53,4 @@ Use narrow commits with a clear scope, for example:
 - `ci: harden provenance and GitHub validation`
 - `security: update sensitive-source policy`
 
-A pull request should state its authority, whether it touches a protected layer, and which validators were run. `CODEOWNERS` provides a default private-review map; enable mandatory code-owner review only after confirming the collaborator workflow in `GITHUB_ADMIN_SETTINGS_CHECKLIST.md`.
+A pull request should state its authority, whether it touches a protected layer, and which validators were run. `CODEOWNERS` provides a default owner-review map; enable mandatory code-owner review only after confirming the collaborator workflow in `GITHUB_ADMIN_SETTINGS_CHECKLIST.md`.

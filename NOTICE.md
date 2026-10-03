@@ -2,11 +2,11 @@
 
 ## Unofficial fan-workshop status
 
-This is an independent, private Fire Phoenix fiction/provenance workshop. It is not affiliated with, endorsed by, sponsored by, or an official publication of any original-rights holder, publisher, platform, adaptation studio, or source repository owner.
+This is an independent Fire Phoenix fiction/provenance workshop. The tracked repository was made publicly visible on 2026-10-03 by direct author decision, but it is not affiliated with, endorsed by, sponsored by, or an official publication of any original-rights holder, publisher, platform, adaptation studio, or source repository owner.
 
 ## No license grant
 
-No license is granted here for third-party intellectual property, recovered public material, or any non-public creative material. A GitHub repository being private or locally accepted does not grant public-distribution rights.
+No license is granted here for third-party intellectual property, recovered public material, or any creative material. Public GitHub visibility and local acceptance do not grant StoryOS publication rights, official status, or permission for additional redistribution/release channels.
 
 ## Evidence boundary
 

@@ -4,8 +4,8 @@ This is the remaining GitHub-side checklist. It requires an authenticated reposi
 
 ## Keep / enable
 
-- [ ] Repository visibility remains **Private**.
-- [ ] Issues remain enabled if the supplied private issue forms will be used.
+- [ ] Repository visibility is **Public** only after `GITHUB_PUBLIC_VISIBILITY_AUTHORIZATION_2026-10-03.md` is executed and recorded.
+- [ ] Issues remain enabled for the supplied public issue forms.
 - [ ] GitHub Actions is enabled with default workflow token permissions set to **read repository contents**.
 - [ ] Secret scanning and push protection are enabled if available for the account/plan.
 - [ ] Dependabot alerts and GitHub Actions updates are enabled if available.
@@ -13,9 +13,9 @@ This is the remaining GitHub-side checklist. It requires an authenticated reposi
 
 ## `main` ruleset after the first successful Actions run
 
-**Current account limitation:** the 2026-10-03 API attempt returned `403`: GitHub branch protection for this private repository requires GitHub Pro or public visibility. Do **not** make the repository public to obtain this feature. Until a private-plan upgrade is explicitly approved, retain the private repository, CI workflow, local hooks, and required validation discipline.
+**Visibility-dependent step:** the 2026-10-03 API attempt returned `403` while the repository was private: GitHub branch protection required GitHub Pro or public visibility. Public visibility is now separately authorized. After visibility is confirmed, retry the protection/ruleset request and record its result; do not claim branch protection until GitHub accepts it.
 
-If/when a private-plan upgrade makes rules available, create a ruleset targeting `main` with:
+After public visibility is confirmed, create a ruleset/protection policy targeting `main` with:
 
 - [ ] Block force pushes.
 - [ ] Block branch deletion.

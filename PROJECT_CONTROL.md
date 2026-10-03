@@ -2,7 +2,7 @@
 
 **Current status:** `LOCAL_ACCEPTED_NOT_PUBLIC`  
 **Effective date:** 2026-10-03  
-**Git status:** private GitHub mirror established; `main` and the local-acceptance tag were pushed on 2026-10-03. Future pushes remain authority-gated.
+**Git status:** public GitHub mirror authorized; `main` and the local-acceptance tag were pushed on 2026-10-03. Future pushes remain authority-gated.
 **Public recovery status:** unchanged and hash-verified.  
 **C61:** not authorized.
 
@@ -83,6 +83,6 @@ python3 tools/validate_local_accepted_v2_release.py
 
 ## 6. GitHub remote boundary
 
-A private GitHub repository now exists at `https://github.com/gm5206663-bit/fire-phoenix-workshop` and the initially validated `main` branch plus the local-acceptance tag were pushed on 2026-10-03. The recovered public StoryOS layer remains unchanged; the GitHub repository is a private workshop mirror, not public publication.
+The GitHub repository at `https://github.com/gm5206663-bit/fire-phoenix-workshop` is authorized to become public under `GITHUB_PUBLIC_VISIBILITY_AUTHORIZATION_2026-10-03.md`; its `main` branch and local-acceptance tag were previously pushed. Public repository visibility makes tracked workshop material public, but does **not** modify the recovered public StoryOS layer or apply the V2 line to StoryOS.
 
-No persistent GitHub credential is stored in the workspace. This sandbox may reset `.git/config`; run `bash tools/configure_github_remote.sh` before a later explicitly authorized push, then verify with `git remote -v`. Opening PRs/releases, changing visibility, public publishing, or pushing future changes still requires explicit author instruction.
+No persistent GitHub credential is stored in the workspace. This sandbox may reset `.git/config`; run `bash tools/configure_github_remote.sh` before a later explicitly authorized push, then verify with `git remote -v`. Public releases, Pages, public StoryOS application, C56/C61 work, or future pushes still require their own explicit author instruction.
