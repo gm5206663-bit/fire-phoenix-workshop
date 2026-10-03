@@ -1,0 +1,41 @@
+name: Validate Fire Phoenix workshop
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Provenance and current-line checks
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Verify recovered public evidence
+        run: python3 tools/verify_public_recovery.py
+
+      - name: Verify recovered workshop baseline
+        run: python3 tools/validate_workshop.py
+
+      - name: Verify frozen V1 historical package
+        run: python3 tools/validate_replacement_line_48_60.py
+
+      - name: Verify protected V2 current line
+        run: python3 tools/validate_current_v2_line.py
+
+      - name: Verify selected Option A staging package
+        run: python3 late_arc_rebuild/rebuild_v2/promotion_proposal_2026-10-03/staging_option_A_contiguous_public_C48_C55/validate_option_a_staging.py
+
+      - name: Verify locally accepted V2 C48-C55 snapshot
+        run: python3 tools/validate_local_accepted_v2_release.py
