@@ -29,6 +29,8 @@ This is not a simplified summary. It is a verified public-source workshop:
 5. `SARA_WORKING_CONTEXT.md` — standing continuity principles.
 6. `continuation_preparation/README.md` — historical Chapter-53 preparation only; never live creative direction.
 7. `provenance/PUBLIC_RECOVERY_MANIFEST.json` — exact original URL, ref, source path, and SHA for every recovered file.
+8. `GITHUB_MANAGEMENT.md` — local-Git posture, GitHub-ready controls, and external-push boundary.
+9. `LOCAL_GIT_INITIALIZATION_RECEIPT_2026-10-03.md` — local commits, validation, tag, and quarantine receipt.
 
 ## Preserved public story truth
 

@@ -20,7 +20,9 @@ Recommended future repository settings:
 - local Git repository initialization and local commit history;
 - `.github/workflows/validate.yml` for recovery, V1-history, V2-current, staging, and acceptance checks;
 - PR template, contribution policy, security policy, and project-control authority record;
-- a dated locally accepted V2 Option A C48–C55 layer with hash-pinned provenance.
+- a dated locally accepted V2 Option A C48–C55 layer with hash-pinned provenance;
+- a local-only acceptance tag, `local-accepted-v2-option-a-2026-10-03`, which explicitly does not imply public release;
+- `LOCAL_GIT_INITIALIZATION_RECEIPT_2026-10-03.md`, recording local commits, validation, and repository integrity;
 - the quarantined rejected Dorm333-only Chapter-53 prose remains locally preserved but intentionally ignored by its nested quarantine `.gitignore`; it is not part of the staged remote-ready tree.
 
 ## What is intentionally not done
