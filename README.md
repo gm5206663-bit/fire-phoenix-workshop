@@ -31,6 +31,7 @@ This is not a simplified summary. It is a verified public-source workshop:
 7. `provenance/PUBLIC_RECOVERY_MANIFEST.json` — exact original URL, ref, source path, and SHA for every recovered file.
 8. `GITHUB_MANAGEMENT.md` — local-Git posture, GitHub-ready controls, and external-push boundary.
 9. `LOCAL_GIT_INITIALIZATION_RECEIPT_2026-10-03.md` — local commits, validation, tag, and quarantine receipt.
+10. `GITHUB_REMOTE_PUBLICATION_RECEIPT_2026-10-03.md` — private remote creation and initial-push receipt.
 
 ## Preserved public story truth
 

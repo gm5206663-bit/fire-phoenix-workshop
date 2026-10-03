@@ -1,6 +1,9 @@
 # GitHub Management Plan — Fire Phoenix
 
-**Current mode:** local Git only. No remote exists; no push is authorized.
+**Current mode:** private GitHub repository established and initially pushed on 2026-10-03.  
+**Remote:** `https://github.com/gm5206663-bit/fire-phoenix-workshop.git`  
+**Default branch:** `main`  
+**Public recovery layer:** unchanged; the external repository is private.
 
 ## Repository posture
 
@@ -23,24 +26,25 @@ Recommended future repository settings:
 - a dated locally accepted V2 Option A C48–C55 layer with hash-pinned provenance;
 - a local-only acceptance tag, `local-accepted-v2-option-a-2026-10-03`, which explicitly does not imply public release;
 - `LOCAL_GIT_INITIALIZATION_RECEIPT_2026-10-03.md`, recording local commits, validation, and repository integrity;
-- the quarantined rejected Dorm333-only Chapter-53 prose remains locally preserved but intentionally ignored by its nested quarantine `.gitignore`; it is not part of the staged remote-ready tree.
+- the quarantined rejected Dorm333-only Chapter-53 prose remains locally preserved but intentionally ignored by its nested quarantine `.gitignore`; it is not part of the staged remote-ready tree;
+- an approved private remote and initial `main`/local-acceptance-tag push, recorded in `GITHUB_REMOTE_PUBLICATION_RECEIPT_2026-10-03.md`;
+- `tools/configure_github_remote.sh`, which restores the approved non-secret `origin` URL when this sandbox resets transient Git configuration.
 
 ## What is intentionally not done
 
-- no GitHub account/repository was created;
-- no remote URL was added;
-- no branch was pushed;
+- no public repository, public release, Pages site, or public publication action was created;
 - no GitHub issue, PR, release, project board, deploy key, webhook, or automation token was created;
 - no recovered public layer was changed or published.
 
-GitHub CLI is not installed/authenticated in this workspace, and no destination repository was supplied.
+No persistent GitHub credential is stored in this workspace. The destination was created privately and pushed through a one-time scoped credential that was removed after use.
 
 ## Authorized future remote procedure
 
-Only after explicit author approval and a repository destination:
+For a future explicitly authorized push, first restore/check the approved private remote:
 
 ```bash
-git remote add origin <AUTHORIZED-GITHUB-SSH-OR-HTTPS-URL>
+bash tools/configure_github_remote.sh
+git remote -v
 git push -u origin main
 ```
 

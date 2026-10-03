@@ -80,6 +80,8 @@ python3 tools/validate_local_accepted_v2_release.py
 
 `tools/validate_replacement_line_48_60.py` validates frozen V1 historical integrity. It should remain runnable, but it is not a validator for the accepted V2 line.
 
-## 6. External GitHub boundary
+## 6. GitHub remote boundary
 
-There is no configured Git remote and no GitHub CLI credential in this workspace. A local Git repository may track this project, but adding a remote, creating a GitHub repository, pushing commits, opening a PR, or creating a release requires a later explicit author instruction and a GitHub destination.
+A private GitHub repository now exists at `https://github.com/gm5206663-bit/fire-phoenix-workshop` and the initially validated `main` branch plus the local-acceptance tag were pushed on 2026-10-03. The recovered public StoryOS layer remains unchanged; the GitHub repository is a private workshop mirror, not public publication.
+
+No persistent GitHub credential is stored in the workspace. This sandbox may reset `.git/config`; run `bash tools/configure_github_remote.sh` before a later explicitly authorized push, then verify with `git remote -v`. Opening PRs/releases, changing visibility, public publishing, or pushing future changes still requires explicit author instruction.
