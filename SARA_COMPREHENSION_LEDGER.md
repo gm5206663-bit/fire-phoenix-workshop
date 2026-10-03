@@ -1,6 +1,6 @@
 # Sara’s Comprehension Ledger — Fire Phoenix
 
-**Current control update (2026-10-03):** the author selected local acceptance of the V2 Option A contiguous C48–C55 line. Read `PROJECT_CONTROL.md` and `accepted_replacement_layers/2026-10-03_option_A_v2_contiguous_C48_C55/` before using any replacement prose. The recovered public StoryOS layer remains unchanged, no GitHub push is authorized, and C61 is not authorized.
+**Current control update (2026-10-03):** the author selected local acceptance of the V2 Option A contiguous C48–C55 line. Read `PROJECT_CONTROL.md` and `accepted_replacement_layers/2026-10-03_option_A_v2_contiguous_C48_C55/` before using any replacement prose. The recovered public StoryOS layer remains unchanged; public GitHub repository visibility does not authorize a StoryOS application or any further creative push; and C61 is not authorized.
 
 **Historical V1 note:** detailed references below to a thirteen-chapter C48–C60 V1 author-review line remain provenance and diagnosis evidence. They do not supersede the accepted V2 causal-unit line.
 

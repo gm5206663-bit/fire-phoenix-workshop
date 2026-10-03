@@ -1,8 +1,8 @@
 # Fire Phoenix Project Control
 
-**Current status:** `LOCAL_ACCEPTED_NOT_PUBLIC`  
+**Current status:** `LOCAL_ACCEPTED_NOT_PUBLIC` — this remains the creative/publication status; the GitHub repository itself is separately public.
 **Effective date:** 2026-10-03  
-**Git status:** public GitHub mirror authorized; `main` and the local-acceptance tag were pushed on 2026-10-03. Future pushes remain authority-gated.
+**Git status:** public GitHub repository verified; public-visibility execution and the current `main` state are recorded in `GITHUB_PUBLIC_VISIBILITY_EXECUTION_RECEIPT_2026-10-03.md`. Future pushes remain authority-gated.
 **Public recovery status:** unchanged and hash-verified.  
 **C61:** not authorized.
 
@@ -40,7 +40,7 @@ The protected source, claim audit, craft diagnosis, and line pass remain in `lat
 - overwrite `sources/storyos_current_public_layer/`;
 - alter recovered public `state.json`, `state.txt`, gate/rules/decisions, source files, or recovery provenance;
 - delete frozen V1 late-rebuild files, historical contracts, audit receipts, rejected drafts, or archives;
-- authorize public publication, a release, public visibility, Pages, or any future GitHub push without direct author approval;
+- authorize a public StoryOS application, a release, Pages, an additional public distribution channel, or any future GitHub push without direct author approval; GitHub repository visibility was separately authorized and executed;
 - authorize C56, C61, future-source allocation, or adaptation claims.
 
 ## 3. Authority order
@@ -83,6 +83,6 @@ python3 tools/validate_local_accepted_v2_release.py
 
 ## 6. GitHub remote boundary
 
-The GitHub repository at `https://github.com/gm5206663-bit/fire-phoenix-workshop` is authorized to become public under `GITHUB_PUBLIC_VISIBILITY_AUTHORIZATION_2026-10-03.md`; its `main` branch and local-acceptance tag were previously pushed. Public repository visibility makes tracked workshop material public, but does **not** modify the recovered public StoryOS layer or apply the V2 line to StoryOS.
+The GitHub repository at `https://github.com/gm5206663-bit/fire-phoenix-workshop` is public under the executed `GITHUB_PUBLIC_VISIBILITY_AUTHORIZATION_2026-10-03.md`; the exact transition and controls are recorded in `GITHUB_PUBLIC_VISIBILITY_EXECUTION_RECEIPT_2026-10-03.md`. Public repository visibility makes tracked workshop material and reachable history public, but does **not** modify the recovered public StoryOS layer or apply the V2 line to StoryOS.
 
 No persistent GitHub credential is stored in the workspace. This sandbox may reset `.git/config`; run `bash tools/configure_github_remote.sh` before a later explicitly authorized push, then verify with `git remote -v`. Public releases, Pages, public StoryOS application, C56/C61 work, or future pushes still require their own explicit author instruction.

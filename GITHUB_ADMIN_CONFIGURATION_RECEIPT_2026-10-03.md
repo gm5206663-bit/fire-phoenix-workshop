@@ -4,6 +4,8 @@
 **Repository:** `gm5206663-bit/fire-phoenix-workshop` (private)  
 **Governance upgrade commit:** `541e92aebcf5a18bf27553d8df8679642dce5ac6`
 
+> **Historical record:** This receipt preserves the private-repository configuration state at the time it was made. The repository was subsequently made public under separate direct authorization; current visibility, branch-protection, and security-control outcomes are recorded in `GITHUB_PUBLIC_VISIBILITY_EXECUTION_RECEIPT_2026-10-03.md`. The API results below are not a statement of the current public-repository state.
+
 ## API results
 
 - `setting_issues=200`

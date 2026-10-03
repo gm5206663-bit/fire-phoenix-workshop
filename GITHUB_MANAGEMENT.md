@@ -7,15 +7,15 @@
 
 ## Repository posture
 
-Public GitHub visibility was separately authorized on 2026-10-03 for the tracked repository only. It exposes the entire tracked workshop/history, so `GITHUB_PUBLIC_VISIBILITY_AUTHORIZATION_2026-10-03.md`, `NOTICE.md`, and `PUBLICATION_AND_DATA_CLASSIFICATION.md` control the distinction between repository visibility and StoryOS/public-story application. No new public release/license is added automatically.
+Public GitHub visibility was separately authorized and executed on 2026-10-03 for the tracked repository only; see `GITHUB_PUBLIC_VISIBILITY_EXECUTION_RECEIPT_2026-10-03.md`. It exposes the entire tracked workshop/history, so `GITHUB_PUBLIC_VISIBILITY_AUTHORIZATION_2026-10-03.md`, `NOTICE.md`, and `PUBLICATION_AND_DATA_CLASSIFICATION.md` control the distinction between repository visibility and StoryOS/public-story application. No new public release/license is added automatically.
 
 Recommended future repository settings:
 
 - default branch: `main`;
-- after public visibility is applied, create the `main` protection/ruleset in `GITHUB_ADMIN_SETTINGS_CHECKLIST.md` with the verified **Provenance and current-line checks** status check;
-- require the validation check before collaborator merges while retaining explicit owner administration;
-- rely on SHA-pinned CI and installed local validation hooks in addition to public branch protection.
-- enable secret scanning and push protection when available;
+- `main` branch protection is active with the verified **Provenance and current-line checks** status check; see the public-visibility execution receipt;
+- require the validation check before collaborator merges while retaining the documented owner/admin bypass;
+- rely on SHA-pinned CI and installed local validation hooks in addition to public branch protection;
+- GitHub accepted the secret-scanning and push-protection enablement request; retain the exact outcome in the execution receipt rather than assuming availability from visibility alone;
 - keep Actions permissions read-only by default;
 - do not enable automatic releases or Pages without separate authorization.
 
@@ -28,7 +28,7 @@ Recommended future repository settings:
 - a local-acceptance tag, `local-accepted-v2-option-a-2026-10-03`, which explicitly does not imply public release;
 - `LOCAL_GIT_INITIALIZATION_RECEIPT_2026-10-03.md`, recording local commits, validation, and repository integrity;
 - the quarantined rejected Dorm333-only Chapter-53 prose remains locally preserved but intentionally ignored by its nested quarantine `.gitignore`; it is not part of the staged remote-ready tree;
-- an initially private remote and initial `main`/local-acceptance-tag push, recorded in `GITHUB_REMOTE_PUBLICATION_RECEIPT_2026-10-03.md`;
+- an initially private remote and initial `main`/local-acceptance-tag push, recorded in `GITHUB_REMOTE_PUBLICATION_RECEIPT_2026-10-03.md`, followed by the separately executed public-visibility transition in `GITHUB_PUBLIC_VISIBILITY_EXECUTION_RECEIPT_2026-10-03.md`;
 - `tools/configure_github_remote.sh`, which restores the approved non-secret `origin` URL when this sandbox resets transient Git configuration;
 - SHA-pinned Actions, Dependabot monitoring for GitHub Actions, issue forms, `CODEOWNERS`, backup tooling, and an administrator settings checklist.
 
@@ -38,7 +38,7 @@ Recommended future repository settings:
 - no GitHub issue, PR, release, project board, deploy key, webhook, or automation token was created;
 - no recovered public layer was changed or published.
 
-No persistent GitHub credential is stored in this workspace. The destination was created privately and pushed through a one-time scoped credential that was removed after use.
+No persistent GitHub credential is stored in this workspace. The destination was created privately, later converted publicly under direct authorization, and every one-time scoped credential used for these operations was removed after use.
 
 ## Authorized future remote procedure
 
