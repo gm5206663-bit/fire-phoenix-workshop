@@ -1,43 +1,466 @@
 {
   "purpose": "Local metadata index only; original project files remain in their recovered source layers.",
-  "file_count": 1220,
+  "file_count": 1353,
   "records": [
     {
-      "path": ".gitignore",
-      "bytes": 209,
-      "sha256": "f9a3367f4157dc5bad985911bb958a129a0514451cb40d328d1381d031b2522f",
+      "path": ".editorconfig",
+      "bytes": 311,
+      "sha256": "9f6699de81f7fff334320589b9188862efcaa0a38b71b8c4f539d4a724ef2ba5",
       "kind": "no-extension",
       "encoding": "utf-8",
-      "h1": "Public source recovery is intentionally retained. Avoid temporary network/verification debris."
+      "h1": "Markdown hard-breaks and recovered evidence may intentionally contain trailing spaces."
+    },
+    {
+      "path": ".git/HEAD",
+      "bytes": 21,
+      "sha256": "28d25bf82af4c0e2b72f50959b2beb859e3e60b9630a5e8c603dad4ddb2b6e80",
+      "kind": "no-extension",
+      "encoding": "utf-8"
+    },
+    {
+      "path": ".git/config",
+      "bytes": 320,
+      "sha256": "2f6ca197a8cc552e071f3132d79500494f4a56375a94aca60e15ac2e518c6f2e",
+      "kind": "no-extension",
+      "encoding": "utf-8"
+    },
+    {
+      "path": ".git/description",
+      "bytes": 73,
+      "sha256": "85ab6c163d43a17ea9cf7788308bca1466f1b0a8d1cc92e26e9bf63da4062aee",
+      "kind": "no-extension",
+      "encoding": "utf-8"
+    },
+    {
+      "path": ".git/hooks/applypatch-msg.sample",
+      "bytes": 478,
+      "sha256": "0223497a0b8b033aa58a3a521b8629869386cf7ab0e2f101963d328aa62193f7",
+      "kind": "sample",
+      "encoding": "utf-8",
+      "h1": "An example hook script to check the commit log message taken by"
+    },
+    {
+      "path": ".git/hooks/commit-msg.sample",
+      "bytes": 896,
+      "sha256": "1f74d5e9292979b573ebd59741d46cb93ff391acdd083d340b94370753d92437",
+      "kind": "sample",
+      "encoding": "utf-8",
+      "h1": "An example hook script to check the commit log message."
+    },
+    {
+      "path": ".git/hooks/fsmonitor-watchman.sample",
+      "bytes": 4726,
+      "sha256": "e0549964e93897b519bd8e333c037e51fff0f88ba13e086a331592bf801fa1d0",
+      "kind": "sample",
+      "encoding": "utf-8",
+      "h1": "An example hook script to integrate Watchman"
+    },
+    {
+      "path": ".git/hooks/post-update.sample",
+      "bytes": 189,
+      "sha256": "81765af2daef323061dcbc5e61fc16481cb74b3bac9ad8a174b186523586f6c5",
+      "kind": "sample",
+      "encoding": "utf-8",
+      "h1": "An example hook script to prepare a packed repository for use over"
+    },
+    {
+      "path": ".git/hooks/pre-applypatch.sample",
+      "bytes": 424,
+      "sha256": "e15c5b469ea3e0a695bea6f2c82bcf8e62821074939ddd85b77e0007ff165475",
+      "kind": "sample",
+      "encoding": "utf-8",
+      "h1": "An example hook script to verify what is about to be committed"
+    },
+    {
+      "path": ".git/hooks/pre-commit.sample",
+      "bytes": 1649,
+      "sha256": "57185b7b9f05239d7ab52db045f5b89eb31348d7b2177eab214f5eb872e1971b",
+      "kind": "sample",
+      "encoding": "utf-8",
+      "h1": "An example hook script to verify what is about to be committed."
+    },
+    {
+      "path": ".git/hooks/pre-merge-commit.sample",
+      "bytes": 416,
+      "sha256": "d3825a70337940ebbd0a5c072984e13245920cdf8898bd225c8d27a6dfc9cb53",
+      "kind": "sample",
+      "encoding": "utf-8",
+      "h1": "An example hook script to verify what is about to be committed."
+    },
+    {
+      "path": ".git/hooks/pre-push.sample",
+      "bytes": 1374,
+      "sha256": "ecce9c7e04d3f5dd9d8ada81753dd1d549a9634b26770042b58dda00217d086a",
+      "kind": "sample",
+      "encoding": "utf-8",
+      "h1": "An example hook script to verify what is about to be pushed.  Called by \"git"
+    },
+    {
+      "path": ".git/hooks/pre-rebase.sample",
+      "bytes": 4898,
+      "sha256": "4febce867790052338076f4e66cc47efb14879d18097d1d61c8261859eaaa7b3",
+      "kind": "sample",
+      "encoding": "utf-8",
+      "h1": "Copyright (c) 2006, 2008 Junio C Hamano"
+    },
+    {
+      "path": ".git/hooks/pre-receive.sample",
+      "bytes": 544,
+      "sha256": "a4c3d2b9c7bb3fd8d1441c31bd4ee71a595d66b44fcf49ddb310252320169989",
+      "kind": "sample",
+      "encoding": "utf-8",
+      "h1": "An example hook script to make use of push options."
+    },
+    {
+      "path": ".git/hooks/prepare-commit-msg.sample",
+      "bytes": 1492,
+      "sha256": "e9ddcaa4189fddd25ed97fc8c789eca7b6ca16390b2392ae3276f0c8e1aa4619",
+      "kind": "sample",
+      "encoding": "utf-8",
+      "h1": "An example hook script to prepare the commit log message."
+    },
+    {
+      "path": ".git/hooks/push-to-checkout.sample",
+      "bytes": 2783,
+      "sha256": "a53d0741798b287c6dd7afa64aee473f305e65d3f49463bb9d7408ec3b12bf5f",
+      "kind": "sample",
+      "encoding": "utf-8",
+      "h1": "An example hook script to update a checked-out tree on a git push."
+    },
+    {
+      "path": ".git/hooks/sendemail-validate.sample",
+      "bytes": 2308,
+      "sha256": "44ebfc923dc5466bc009602f0ecf067b9c65459abfe8868ddc49b78e6ced7a92",
+      "kind": "sample",
+      "encoding": "utf-8",
+      "h1": "An example hook script to validate a patch (and/or patch series) before"
+    },
+    {
+      "path": ".git/hooks/update.sample",
+      "bytes": 3650,
+      "sha256": "8d5f2fa83e103cf08b57eaa67521df9194f45cbdbcb37da52ad586097a14d106",
+      "kind": "sample",
+      "encoding": "utf-8",
+      "h1": "An example hook script to block unannotated tags from entering."
+    },
+    {
+      "path": ".git/index",
+      "bytes": 255008,
+      "sha256": "5a0b1b353cae8fdc603c027e565ae850c2b5c5872277b79fb56ade04f31610c6",
+      "kind": "no-extension",
+      "encoding": "binary-or-non-utf8"
+    },
+    {
+      "path": ".git/info/exclude",
+      "bytes": 240,
+      "sha256": "6671fe83b7a07c8932ee89164d1f2793b2318058eb8b98dc5c06ee0a5a3b0ec1",
+      "kind": "no-extension",
+      "encoding": "utf-8",
+      "h1": "git ls-files --others --exclude-from=.git/info/exclude"
+    },
+    {
+      "path": ".git/logs/HEAD",
+      "bytes": 192,
+      "sha256": "3d41500673c50bd35aacf2868a330dee10c3686794e977f2868c0629be61a39c",
+      "kind": "no-extension",
+      "encoding": "utf-8"
+    },
+    {
+      "path": ".git/logs/refs/heads/main",
+      "bytes": 192,
+      "sha256": "3d41500673c50bd35aacf2868a330dee10c3686794e977f2868c0629be61a39c",
+      "kind": "no-extension",
+      "encoding": "utf-8"
+    },
+    {
+      "path": ".git/logs/refs/remotes/origin/HEAD",
+      "bytes": 192,
+      "sha256": "3d41500673c50bd35aacf2868a330dee10c3686794e977f2868c0629be61a39c",
+      "kind": "no-extension",
+      "encoding": "utf-8"
+    },
+    {
+      "path": ".git/objects/pack/pack-1ff84bbd036188839e82dadb3c8a981486f0da66.idx",
+      "bytes": 32544,
+      "sha256": "f82be160602f0816a8071bcf3e9fdbee92948a8cc5a6b425e6e09819b124597a",
+      "kind": "idx",
+      "encoding": "binary-or-non-utf8"
+    },
+    {
+      "path": ".git/objects/pack/pack-1ff84bbd036188839e82dadb3c8a981486f0da66.pack",
+      "bytes": 4678427,
+      "sha256": "ec0e800cf124dbe4836e17fdca4287a3aa3cbf0f96e6969a23eae2183698c873",
+      "kind": "pack",
+      "encoding": "binary-or-non-utf8"
+    },
+    {
+      "path": ".git/objects/pack/pack-1ff84bbd036188839e82dadb3c8a981486f0da66.rev",
+      "bytes": 4548,
+      "sha256": "e86f40d515e81c1831aee18cd85837126020510d3422c8ea490db493c459b92f",
+      "kind": "rev",
+      "encoding": "binary-or-non-utf8"
+    },
+    {
+      "path": ".git/packed-refs",
+      "bytes": 467,
+      "sha256": "796ec1c2aee2e1194a97b0b7fc24f987c57e8f8e8d3b3e4f44d6c41ef7834a44",
+      "kind": "no-extension",
+      "encoding": "utf-8",
+      "h1": "pack-refs with: peeled fully-peeled sorted"
+    },
+    {
+      "path": ".git/refs/heads/main",
+      "bytes": 41,
+      "sha256": "48a1367ace13e6c8d946099ce213f3832ef248a294947d21086834913c302738",
+      "kind": "no-extension",
+      "encoding": "utf-8"
+    },
+    {
+      "path": ".git/refs/remotes/origin/HEAD",
+      "bytes": 30,
+      "sha256": "2bb6a24aa0fc6c484100f5d51a29bbad841cd2c755f5d93faa204e5dbb4eb2b4",
+      "kind": "no-extension",
+      "encoding": "utf-8"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/config.yml",
+      "bytes": 513,
+      "sha256": "91e3d44d01245853ae14e0e236bb0706072262202951f35e89b5d398826afe67",
+      "kind": "yml",
+      "encoding": "utf-8"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/continuity-correction.yml",
+      "bytes": 1657,
+      "sha256": "7e95cc2d5a39a292627024f6592f9e0f6f68cbe43912b4b7dd87e82ec2300886",
+      "kind": "yml",
+      "encoding": "utf-8"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/publication-decision.yml",
+      "bytes": 1641,
+      "sha256": "afbf79c6056c7ee5d21ac92ff810a30c3c493b94ebe5dc9a28a06f226b44d947",
+      "kind": "yml",
+      "encoding": "utf-8"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/source-claim-correction.yml",
+      "bytes": 1488,
+      "sha256": "af5d373e8b307390cb9064d3f14e9c74fe22ff1a01390ead34357563ed634f1a",
+      "kind": "yml",
+      "encoding": "utf-8"
+    },
+    {
+      "path": ".github/PULL_REQUEST_TEMPLATE.md",
+      "bytes": 1607,
+      "sha256": "c85ea05d646408c0258c1d8d161c76f20eb1dbfc01d22296861c81908700b4ff",
+      "kind": "md",
+      "encoding": "utf-8"
+    },
+    {
+      "path": ".github/dependabot.yml",
+      "bytes": 203,
+      "sha256": "8b26605d772e425d1c131b88c4a0529517f398b96d5dbffb6bd6e110517546e9",
+      "kind": "yml",
+      "encoding": "utf-8"
+    },
+    {
+      "path": ".github/workflows/validate.yml",
+      "bytes": 1540,
+      "sha256": "f78e9af2cb646d771ad2ee3bd94e3449821de2e64105d3051ecd857dca9b177d",
+      "kind": "yml",
+      "encoding": "utf-8"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 481,
+      "sha256": "87e2ad0044d8fa0b7d5c5f27dca4e23a404b91d01749cc405913b3bcff64e740",
+      "kind": "no-extension",
+      "encoding": "utf-8",
+      "h1": "Python / local tooling"
     },
     {
       "path": "ACTIVE_START_HERE.md",
-      "bytes": 12577,
-      "sha256": "2a4500a6d7be90c50f30989999ce265bfc8975c0176b188919151b1824bc5160",
+      "bytes": 12974,
+      "sha256": "25b7a87f0a5955bd06c359f4d388f2da0c2c8f86c3460a2e0e3214e4cc35d1ec",
       "kind": "md",
       "encoding": "utf-8",
       "h1": "Active Start Here — Fire Phoenix Workshop"
     },
     {
+      "path": "BACKUP_AND_RECOVERY.md",
+      "bytes": 1346,
+      "sha256": "59dfe7a39930960829a75318efe77088bbf7b419609996885654ba0bd33585ba",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "Backup and Recovery"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 2605,
+      "sha256": "e9058987f425b25125808cd77e87f5f4c2a1a74241467ab4fa8bc44e45a0ec2e",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "Changelog"
+    },
+    {
+      "path": "CODEOWNERS",
+      "bytes": 344,
+      "sha256": "bc1d0658230fafe1e2fffcd6a46b48ea8bf404934236347f2d7ef21ea317c5df",
+      "kind": "no-extension",
+      "encoding": "utf-8",
+      "h1": "Ownership mapping for private-repository review. Update before adding collaborators."
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 3004,
+      "sha256": "9dab57cd6a23e6d92afc9a9002a29de1a4db0c1832c24bf1071452c06d9ab190",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "Contributing to the Fire Phoenix Workshop",
+      "archive_marker": "- Preserve rejected/archived material rather than deleting it to make the tree look simpler."
+    },
+    {
       "path": "CURRENT_PUBLIC_VIEW.md",
-      "bytes": 2036,
-      "sha256": "ef5c5e014521678adec18cb182c74d19d7ecba5602292b47efc83005395c7bd6",
+      "bytes": 2199,
+      "sha256": "be9cab3437b6c9cf6aa7ba1eab0497f49d6b9edc057e6ac06745663cd39cdedb",
       "kind": "md",
       "encoding": "utf-8",
       "h1": "Current Public View (Use This, Not a Blind Merge)"
     },
     {
+      "path": "GITHUB_ADMIN_CONFIGURATION_RECEIPT_2026-10-03.md",
+      "bytes": 3265,
+      "sha256": "d31c5aa2e832ca97bd0bb98248e01bdd3eb4389713e5a3cc6956b8f17dec5281",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "GitHub Administrator Configuration Receipt — Fire Phoenix"
+    },
+    {
+      "path": "GITHUB_ADMIN_SETTINGS_CHECKLIST.md",
+      "bytes": 3041,
+      "sha256": "698b56eae4157a00aa47a256bea427b0e4cba0b5f0e1fe170123091eee66608f",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "GitHub Admin Settings Checklist"
+    },
+    {
+      "path": "GITHUB_MANAGEMENT.md",
+      "bytes": 4847,
+      "sha256": "d23fa2def19811a0c51dfbc65081d534386d8b60c6f6fcc7f01c99e39ada74f7",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "GitHub Management Plan — Fire Phoenix"
+    },
+    {
+      "path": "GITHUB_PROJECT_SETUP.md",
+      "bytes": 2295,
+      "sha256": "0a0a0181ade595a995259d05d7eb03a38d5bfa53656f86936f5131953f47487c",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "GitHub Project and Label Setup",
+      "archive_marker": "7. **Archived / historical** — V1, superseded, rejected, or closed evidence."
+    },
+    {
+      "path": "GITHUB_PUBLIC_VISIBILITY_AUTHORIZATION_2026-10-03.md",
+      "bytes": 2275,
+      "sha256": "bbb5a2bad66b0d0a7d8b00cc8c056d9ed536910ca99b91b324779bf4d96c4d67",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "GitHub Public Visibility Authorization — Fire Phoenix"
+    },
+    {
+      "path": "GITHUB_PUBLIC_VISIBILITY_EXECUTION_RECEIPT_2026-10-03.md",
+      "bytes": 1397,
+      "sha256": "b8bae24cefe991b512a463ec453ad7aab900ad4ea875f0f53fcebd205d2905bc",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "GitHub Public Visibility Execution Receipt — Fire Phoenix"
+    },
+    {
+      "path": "GITHUB_REMOTE_PUBLICATION_RECEIPT_2026-10-03.md",
+      "bytes": 1434,
+      "sha256": "6a963631051dc817c29290c04f6a434bc76ca14f0639eb53ee6800e66e98ce91",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "Private GitHub Publication Receipt — Fire Phoenix"
+    },
+    {
+      "path": "GITHUB_UPGRADE_AUDIT_2026-10-03.md",
+      "bytes": 4041,
+      "sha256": "242ca971e1c4692c4a50b1d2bc9141f18d77f65e5ed9198618d1fffa145b53f0",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "GitHub Upgrade Audit — Fire Phoenix"
+    },
+    {
+      "path": "LOCAL_DEVELOPER_SETUP.md",
+      "bytes": 914,
+      "sha256": "d78d51fa65f0cf648f9d6c3a515f1a111e3547a30f7ded378e387054a1c6624c",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "Local Developer Setup"
+    },
+    {
+      "path": "LOCAL_GIT_INITIALIZATION_RECEIPT_2026-10-03.md",
+      "bytes": 2206,
+      "sha256": "7064d354478ee0ae2d96c88b90ef07a7c21dc0578427caaf46aaa195fb4894d5",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "Local Git Initialization Receipt — Fire Phoenix"
+    },
+    {
+      "path": "Makefile",
+      "bytes": 798,
+      "sha256": "e4c82ba451e09d3d0537eb590418a31a80b503b1cfe8adf7d98b2829910ad49c",
+      "kind": "no-extension",
+      "encoding": "utf-8",
+      "h1": "Run governance, recovery, historical, V2, staging, and accepted-snapshot checks."
+    },
+    {
+      "path": "NOTICE.md",
+      "bytes": 1143,
+      "sha256": "a927390fd7f82d7684cb67e0a475b24e0846663b148cbca039ede2b489fd7484",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "Notice"
+    },
+    {
+      "path": "PROJECT_COMPREHENSION_AND_MANAGEMENT_PLAN_2026-10-03.md",
+      "bytes": 7605,
+      "sha256": "69f7f833133ad2e459e9fa6673ebfebb3f05c3d17eb9366951cfd5f3b7f9ded5",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "Fire Phoenix Project — Comprehension and Management Plan"
+    },
+    {
+      "path": "PROJECT_CONTROL.md",
+      "bytes": 5405,
+      "sha256": "263a0b4f02bac0b5dec7d5afa6a63d61d0683c5284e387d3b5960a62ebbf98b6",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "Fire Phoenix Project Control"
+    },
+    {
+      "path": "PUBLICATION_AND_DATA_CLASSIFICATION.md",
+      "bytes": 3364,
+      "sha256": "50abb4dff42fd51eaa1f567a154dbfe368309f707b197a526eb288e6426bc95f",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "Publication and Data Classification Policy"
+    },
+    {
       "path": "README.md",
-      "bytes": 5273,
-      "sha256": "4236ecba92d71c7eaa9a337ffdd69cd54d056a9edb48c796809153b2004eb579",
+      "bytes": 7688,
+      "sha256": "3685da92a7dbac13cee95f750708ff197f281890590bf09e7f588b107fc0e684",
       "kind": "md",
       "encoding": "utf-8",
       "h1": "Soul Land 4 — Fire Phoenix Workshop"
     },
     {
       "path": "SARA_COMPREHENSION_LEDGER.md",
-      "bytes": 18731,
-      "sha256": "ed9e7d230d05197386deb388f2d0df3bc51df54d06fbbc5f1d25ebdf29efb534",
+      "bytes": 19132,
+      "sha256": "0fc9fa57b458ed98c8bae1351b82a82009f53f6127a70c5cd684d4d8d5e5be2e",
       "kind": "md",
       "encoding": "utf-8",
       "h1": "Sara’s Comprehension Ledger — Fire Phoenix",
@@ -45,11 +468,19 @@
     },
     {
       "path": "SARA_WORKING_CONTEXT.md",
-      "bytes": 3008,
-      "sha256": "b05b26a0a7bce564425fa88210c238e238e78501653d612e859c392170827782",
+      "bytes": 3383,
+      "sha256": "38da926d93e0560c4732b7d584387ba743d9c998c91c4db799e5173347273697",
       "kind": "md",
       "encoding": "utf-8",
       "h1": "Sara — Fire Phoenix Working Context"
+    },
+    {
+      "path": "SECURITY.md",
+      "bytes": 1941,
+      "sha256": "0ab856b42c43ccbc00189673695828c01c5cefd520b943b3c699c0b891d8f96c",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "Security and Sensitive-Source Policy"
     },
     {
       "path": "WORKSHOP_INVENTORY.md",
@@ -59,6 +490,93 @@
       "encoding": "utf-8",
       "h1": "Workshop Inventory",
       "archive_marker": "- explicitly quarantined old Chapter 52/53 receipts;"
+    },
+    {
+      "path": "accepted_replacement_layers/2026-10-03_option_A_v2_contiguous_C48_C55/ACCEPTANCE_RECORD_2026-10-03.md",
+      "bytes": 1238,
+      "sha256": "97eebb59fb6450921749dc5d189d7ce0e523be648ccc62c42febce4a731a85b6",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "Local Acceptance Record — Option A V2 C48–C55"
+    },
+    {
+      "path": "accepted_replacement_layers/2026-10-03_option_A_v2_contiguous_C48_C55/README.md",
+      "bytes": 1218,
+      "sha256": "52b4fac9418e6a159ec8dc98e54474c265682f2795b3f92f5b106c70dcc698c8",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "Locally Accepted Replacement Layer — Option A V2 C48–C55"
+    },
+    {
+      "path": "accepted_replacement_layers/2026-10-03_option_A_v2_contiguous_C48_C55/acceptance_manifest.json",
+      "bytes": 5009,
+      "sha256": "01ed8509260c1a65d2f98b9bbc35e3943bf313c9c34603cc2639ec66b324598a",
+      "kind": "json",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "accepted_replacement_layers/2026-10-03_option_A_v2_contiguous_C48_C55/chapters/Chapter_48.md",
+      "bytes": 14385,
+      "sha256": "759629f2cc5b19d5abbfb0eb961a712bbd6fab36d737bbbaf8eece815ee6348f",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "Chapter 48 — The Line We Keep"
+    },
+    {
+      "path": "accepted_replacement_layers/2026-10-03_option_A_v2_contiguous_C48_C55/chapters/Chapter_49.md",
+      "bytes": 11235,
+      "sha256": "a7597f1f4145b9cec1707febb29ed8a11bb38d761ec4eac77ee61575129b0b79",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "Chapter 49 — What They Carry"
+    },
+    {
+      "path": "accepted_replacement_layers/2026-10-03_option_A_v2_contiguous_C48_C55/chapters/Chapter_50.md",
+      "bytes": 10620,
+      "sha256": "4560d8a02034a17ab486804ac4f444aee9f8eae17f983875f2f34618f56d4dc0",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "Chapter 50 — Two Maps of the Forest"
+    },
+    {
+      "path": "accepted_replacement_layers/2026-10-03_option_A_v2_contiguous_C48_C55/chapters/Chapter_51.md",
+      "bytes": 10029,
+      "sha256": "a66e9de2a5cc7952198991b132034fe8968b2998db0e9f66257c8ef79e9aab1c",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "Chapter 51 — The Cost of Quiet"
+    },
+    {
+      "path": "accepted_replacement_layers/2026-10-03_option_A_v2_contiguous_C48_C55/chapters/Chapter_52.md",
+      "bytes": 10162,
+      "sha256": "c6b366774faf1e2efc33ff71cface4fc995031734c175677f69eff6ffa622347",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "Chapter 52 — What the Ground Keeps"
+    },
+    {
+      "path": "accepted_replacement_layers/2026-10-03_option_A_v2_contiguous_C48_C55/chapters/Chapter_53.md",
+      "bytes": 10195,
+      "sha256": "db9b78f4888c7b76e86bcfba24f517d59c238f639e2ade5c8bd5dab14712a7de",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "Chapter 53 — What a Favor Costs"
+    },
+    {
+      "path": "accepted_replacement_layers/2026-10-03_option_A_v2_contiguous_C48_C55/chapters/Chapter_54.md",
+      "bytes": 9227,
+      "sha256": "33141470564d2146d9b2e0964ddacf2d9138d5299a195411853342a820641977",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "Chapter 54 — What We Leave Open"
+    },
+    {
+      "path": "accepted_replacement_layers/2026-10-03_option_A_v2_contiguous_C48_C55/chapters/Chapter_55.md",
+      "bytes": 10766,
+      "sha256": "5478d9fd874f36e0d7e64e2c478becfc84ede27c78a553f88eb987ada193a855",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "Chapter 55 — The Price of Keeping"
     },
     {
       "path": "continuation_preparation/.gitignore",
@@ -126,8 +644,8 @@
     },
     {
       "path": "continuation_preparation/README.md",
-      "bytes": 2583,
-      "sha256": "91099786ac77eece80a50f2bdbcecf29522ff98dc7c62b3b0f6aba33433ed4f5",
+      "bytes": 2869,
+      "sha256": "06c0577aa13f28725a2bec1691a4b6904d619d866e7b0a2752d1436b0f38e9ac",
       "kind": "md",
       "encoding": "utf-8",
       "h1": "Soul Land 4 Fire Phoenix — Superseded Chapter-53 Preparation Package",
@@ -158,14 +676,6 @@
       "h1": "Active Draft Compartment"
     },
     {
-      "path": "continuation_preparation/rejected_drafts/2026-09-27_dorm333_only_ch53_candidate/Chapter_53_The_Third_Thing.md",
-      "bytes": 11307,
-      "sha256": "9244182e6509cf798c9baa3a0c4eb164dc29491e5a71a9ff35e81e93df882b98",
-      "kind": "md",
-      "encoding": "utf-8",
-      "h1": "Chapter 53 — The Third Thing"
-    },
-    {
       "path": "continuation_preparation/rejected_drafts/2026-09-27_dorm333_only_ch53_candidate/README.md",
       "bytes": 1606,
       "sha256": "6985d67fba83da7b600d4216317c72d1f6476296dbbc6ccc798f3066f611068c",
@@ -192,11 +702,19 @@
     },
     {
       "path": "late_arc_rebuild/README.md",
-      "bytes": 6978,
-      "sha256": "42f7ecae7cab600ef83128c48946fccda6128dfe86270ee50d2c3b88d69ba978",
+      "bytes": 7406,
+      "sha256": "52cc175189c5faf37463db40598abda5354bc3ed0abb01db7e589efb34553e85",
       "kind": "md",
       "encoding": "utf-8",
       "h1": "Fire Phoenix Late-Arc Rebuild Draft Line"
+    },
+    {
+      "path": "late_arc_rebuild/REBUILD_V2_DECISION_AND_IMPLEMENTATION_GUARD_2026-10-01.md",
+      "bytes": 3817,
+      "sha256": "0ecf0d378f1e103214271f1a400f74c5f471b11040ea2591d56500633288fa8c",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "C48–C60 Rebuild V2 — Decision Resolution and Implementation Guard"
     },
     {
       "path": "late_arc_rebuild/audit/C48_C54_SERIAL_SEAM_AND_COLD_READ_2026-09-27.md",
@@ -568,6 +1086,322 @@
       "h1": "Chapter 60 — What We Will Not Spend"
     },
     {
+      "path": "late_arc_rebuild/rebuild_v2/C48_C60_REBUILD_V2_REVIEW_PACKET.md",
+      "bytes": 93635,
+      "sha256": "f216e68fe82d32c6de738a51bac6b3bf83a843e90caace438069cf82c5c23c5a",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "Fire Phoenix — C48–C60 Rebuild V2 Review Packet"
+    },
+    {
+      "path": "late_arc_rebuild/rebuild_v2/LINE_AND_CONTINUITY_PASS_2026-10-03.md",
+      "bytes": 6652,
+      "sha256": "bc0b16d6644198d73e760db04d6f49f634f503903769da93e9878fedfaa1642d",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "C48–C60 Rebuild V2 — Final Line and Continuity Pass"
+    },
+    {
+      "path": "late_arc_rebuild/rebuild_v2/README_REBUILD_MAP.md",
+      "bytes": 3907,
+      "sha256": "3433d9f7d8417c8c29579751138d9543a65bd974c823109bb3edae7ae30a4b22",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "Fire Phoenix C48–C60 — Rebuild V2 Map"
+    },
+    {
+      "path": "late_arc_rebuild/rebuild_v2/V2_CLAIM_AND_CAUSAL_AUDIT_2026-10-01.md",
+      "bytes": 13511,
+      "sha256": "c0c5cdac6b894e2398f349051b91b42b20c1ad3036f3f39ed6b7b4cc6105c0ec",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "C48–C60 Rebuild V2 — Claim and Causal Audit"
+    },
+    {
+      "path": "late_arc_rebuild/rebuild_v2/drafts/Chapter_48_The_Line_We_Keep.md",
+      "bytes": 14897,
+      "sha256": "daa63d8bce8cc5d4452987b10a305a2bd5a32309697fd8838a478f4794ca52e4",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "Chapter 48 — The Line We Keep"
+    },
+    {
+      "path": "late_arc_rebuild/rebuild_v2/drafts/Chapter_49_What_They_Carry.md",
+      "bytes": 11855,
+      "sha256": "b06fda634b51a637f484eebfa636a804d1b937f55a3bdb4b95518ce7b7111ab5",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "Chapter 49 — What They Carry"
+    },
+    {
+      "path": "late_arc_rebuild/rebuild_v2/drafts/Chapter_50_Two_Maps_of_the_Forest.md",
+      "bytes": 11322,
+      "sha256": "24401aa7e74af25f38a25c1ea59c5a8d06f3feaf9d2be0d16aa994a6a61ddd45",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "Chapter 50 — Two Maps of the Forest"
+    },
+    {
+      "path": "late_arc_rebuild/rebuild_v2/drafts/Chapter_51_The_Cost_of_Quiet.md",
+      "bytes": 10648,
+      "sha256": "2c0572960e2eb667d6d053e2f812eee4f6279c10f88e538281bfc6e160825882",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "Chapter 51 — The Cost of Quiet"
+    },
+    {
+      "path": "late_arc_rebuild/rebuild_v2/drafts/Chapter_52_What_the_Ground_Keeps.md",
+      "bytes": 10922,
+      "sha256": "9e49cbced7e58426265a48981ca975a9100a6eebfd5d77cfe36c5bfa2409bab8",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "Chapter 52 — What the Ground Keeps"
+    },
+    {
+      "path": "late_arc_rebuild/rebuild_v2/drafts/Chapter_54_What_a_Favor_Costs.md",
+      "bytes": 11116,
+      "sha256": "eebb8a6afc86bbd1990767172e200514930818457561dda47846465743777960",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "Chapter 54 — What a Favor Costs"
+    },
+    {
+      "path": "late_arc_rebuild/rebuild_v2/drafts/Chapter_55_What_We_Leave_Open.md",
+      "bytes": 10129,
+      "sha256": "8344dc468d3b7c8ac0a0475876b16eddccef1c39e257b69068a2ada10089843e",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "Chapter 55 — What We Leave Open"
+    },
+    {
+      "path": "late_arc_rebuild/rebuild_v2/drafts/Chapter_60_The_Price_of_Keeping.md",
+      "bytes": 11835,
+      "sha256": "af6bd2b17eabe019ca96e371f3cc47d7f689b5c34f86932f2c5cd430c89dfc22",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "Chapter 60 — The Price of Keeping"
+    },
+    {
+      "path": "late_arc_rebuild/rebuild_v2/pre_line_pass_drafts/Chapter_48_The_Line_We_Keep.md",
+      "bytes": 14897,
+      "sha256": "daa63d8bce8cc5d4452987b10a305a2bd5a32309697fd8838a478f4794ca52e4",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "Chapter 48 — The Line We Keep"
+    },
+    {
+      "path": "late_arc_rebuild/rebuild_v2/pre_line_pass_drafts/Chapter_49_What_They_Carry.md",
+      "bytes": 11844,
+      "sha256": "bec38b48f634b2f168d0ed8ebdce76184ab0014ebffa670dc87ec9a2ca9fbd87",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "Chapter 49 — What They Carry"
+    },
+    {
+      "path": "late_arc_rebuild/rebuild_v2/pre_line_pass_drafts/Chapter_50_Two_Maps_of_the_Forest.md",
+      "bytes": 11455,
+      "sha256": "47c0ff24f258078428c172e640f361af3592492498c031a212e0ae01183ee4ce",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "Chapter 50 — Two Maps of the Forest"
+    },
+    {
+      "path": "late_arc_rebuild/rebuild_v2/pre_line_pass_drafts/Chapter_51_The_Cost_of_Quiet.md",
+      "bytes": 10704,
+      "sha256": "df9d33edbad84470b5c3538f7551e766b263a32e7caaaa8a387d30e6a6bd0095",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "Chapter 51 — The Cost of Quiet"
+    },
+    {
+      "path": "late_arc_rebuild/rebuild_v2/pre_line_pass_drafts/Chapter_52_What_the_Ground_Keeps.md",
+      "bytes": 11657,
+      "sha256": "a8b6ff0ba7bd4850aa2154c1383c38876bf94c7d6b9b7f4131b49433f66b3186",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "Chapter 52 — What the Ground Keeps"
+    },
+    {
+      "path": "late_arc_rebuild/rebuild_v2/pre_line_pass_drafts/Chapter_54_What_a_Favor_Costs.md",
+      "bytes": 12160,
+      "sha256": "71a329dd819b98b305e6f98c478db9e4c12c1ebf7a5e5427316642709869c828",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "Chapter 54 — What a Favor Costs"
+    },
+    {
+      "path": "late_arc_rebuild/rebuild_v2/pre_line_pass_drafts/Chapter_55_What_We_Leave_Open.md",
+      "bytes": 10758,
+      "sha256": "17d51d5a11434bab6d34a6f143d6805ead9eabf655cb0695db4e2c7540bb5a5e",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "Chapter 55 — What We Leave Open"
+    },
+    {
+      "path": "late_arc_rebuild/rebuild_v2/pre_line_pass_drafts/Chapter_60_The_Price_of_Keeping.md",
+      "bytes": 12522,
+      "sha256": "c9c9a02c063040d9b35bc0ca58b51cce64fd2721571c2db06a8251568d0c393e",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "Chapter 60 — The Price of Keeping"
+    },
+    {
+      "path": "late_arc_rebuild/rebuild_v2/promotion_proposal_2026-10-03/CANDIDATE_GATE_AND_AUTHORITY_DELTA_2026-10-03.md",
+      "bytes": 4530,
+      "sha256": "2d1eaec6608a58aa767408bbab4c2eae2fc7f64c936e7ba4a2b7cef331c66393",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "Candidate Gate and Authority Delta — V2 Promotion Proposal"
+    },
+    {
+      "path": "late_arc_rebuild/rebuild_v2/promotion_proposal_2026-10-03/CANDIDATE_STATE_DELTA_2026-10-03.md",
+      "bytes": 4802,
+      "sha256": "da6412beb2dac044c7f502d32d1887fbe4491942fade78d0bac0d3faa96049a6",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "Candidate State Delta — V2 Promotion Proposal"
+    },
+    {
+      "path": "late_arc_rebuild/rebuild_v2/promotion_proposal_2026-10-03/PUBLIC_IMPACT_AND_NUMBERING_DECISION_2026-10-03.md",
+      "bytes": 5567,
+      "sha256": "ce45e86b7074c0f77619b4e0fd91df2ccae3466b00ae0006abe9550c3260521c",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "Public Impact and Numbering Decision — V2 Promotion Proposal",
+      "archive_marker": "- Chapter 53: quarantined/superseded, not an accepted public chapter."
+    },
+    {
+      "path": "late_arc_rebuild/rebuild_v2/promotion_proposal_2026-10-03/README.md",
+      "bytes": 2965,
+      "sha256": "84e49341c9ca270af955537c7de9b170deb807cde96361a99a6d14b48090c8e7",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "V2 Public-Promotion Proposal — Review Package"
+    },
+    {
+      "path": "late_arc_rebuild/rebuild_v2/promotion_proposal_2026-10-03/candidate_manifest.json",
+      "bytes": 6598,
+      "sha256": "c3d1d1839040e1d2f123b6a109f2a78e6b8a4ff515b42e0bc57463c1d5517fd2",
+      "kind": "json",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "late_arc_rebuild/rebuild_v2/promotion_proposal_2026-10-03/existing_public_gate_content_screen_2026-10-03.json",
+      "bytes": 2266,
+      "sha256": "79b1097bf14ba315ffd76cb679afcd7c65c011c72d2b5ccb4d90b8c0379ab1b7",
+      "kind": "json",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "late_arc_rebuild/rebuild_v2/promotion_proposal_2026-10-03/staging_option_A_contiguous_public_C48_C55/OPTION_A_PUBLIC_STAGING_REVIEW_PACKET.md",
+      "bytes": 87353,
+      "sha256": "4f164a0194e404d1677e9ac1dc0a049a54b91177168bf81f2a3080cb5525c4ae",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "Fire Phoenix — Option A Public Staging Review Packet"
+    },
+    {
+      "path": "late_arc_rebuild/rebuild_v2/promotion_proposal_2026-10-03/staging_option_A_contiguous_public_C48_C55/OPTION_A_STAGING_VALIDATION_2026-10-03.md",
+      "bytes": 1436,
+      "sha256": "9510fa224098efad02fbf4045226b7f1be422d407c70925df1428613d55468c7",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "Option A Staging Validation Receipt"
+    },
+    {
+      "path": "late_arc_rebuild/rebuild_v2/promotion_proposal_2026-10-03/staging_option_A_contiguous_public_C48_C55/README.md",
+      "bytes": 1775,
+      "sha256": "84954e824ed7001a8d61851cd9c11971a4ff6e2d07682013070dd3c0c925f312",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "Option A — Contiguous Public C48–C55 Staging Candidate"
+    },
+    {
+      "path": "late_arc_rebuild/rebuild_v2/promotion_proposal_2026-10-03/staging_option_A_contiguous_public_C48_C55/candidate_state_overlay_option_A.json",
+      "bytes": 2682,
+      "sha256": "62ce761ee713ef201f026beb79a2d46c80dc5bf7602b0392f8ae2681d92cba99",
+      "kind": "json",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "late_arc_rebuild/rebuild_v2/promotion_proposal_2026-10-03/staging_option_A_contiguous_public_C48_C55/chapters/Chapter_48.md",
+      "bytes": 14385,
+      "sha256": "759629f2cc5b19d5abbfb0eb961a712bbd6fab36d737bbbaf8eece815ee6348f",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "Chapter 48 — The Line We Keep"
+    },
+    {
+      "path": "late_arc_rebuild/rebuild_v2/promotion_proposal_2026-10-03/staging_option_A_contiguous_public_C48_C55/chapters/Chapter_49.md",
+      "bytes": 11235,
+      "sha256": "a7597f1f4145b9cec1707febb29ed8a11bb38d761ec4eac77ee61575129b0b79",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "Chapter 49 — What They Carry"
+    },
+    {
+      "path": "late_arc_rebuild/rebuild_v2/promotion_proposal_2026-10-03/staging_option_A_contiguous_public_C48_C55/chapters/Chapter_50.md",
+      "bytes": 10620,
+      "sha256": "4560d8a02034a17ab486804ac4f444aee9f8eae17f983875f2f34618f56d4dc0",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "Chapter 50 — Two Maps of the Forest"
+    },
+    {
+      "path": "late_arc_rebuild/rebuild_v2/promotion_proposal_2026-10-03/staging_option_A_contiguous_public_C48_C55/chapters/Chapter_51.md",
+      "bytes": 10029,
+      "sha256": "a66e9de2a5cc7952198991b132034fe8968b2998db0e9f66257c8ef79e9aab1c",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "Chapter 51 — The Cost of Quiet"
+    },
+    {
+      "path": "late_arc_rebuild/rebuild_v2/promotion_proposal_2026-10-03/staging_option_A_contiguous_public_C48_C55/chapters/Chapter_52.md",
+      "bytes": 10162,
+      "sha256": "c6b366774faf1e2efc33ff71cface4fc995031734c175677f69eff6ffa622347",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "Chapter 52 — What the Ground Keeps"
+    },
+    {
+      "path": "late_arc_rebuild/rebuild_v2/promotion_proposal_2026-10-03/staging_option_A_contiguous_public_C48_C55/chapters/Chapter_53.md",
+      "bytes": 10195,
+      "sha256": "db9b78f4888c7b76e86bcfba24f517d59c238f639e2ade5c8bd5dab14712a7de",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "Chapter 53 — What a Favor Costs"
+    },
+    {
+      "path": "late_arc_rebuild/rebuild_v2/promotion_proposal_2026-10-03/staging_option_A_contiguous_public_C48_C55/chapters/Chapter_54.md",
+      "bytes": 9227,
+      "sha256": "33141470564d2146d9b2e0964ddacf2d9138d5299a195411853342a820641977",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "Chapter 54 — What We Leave Open"
+    },
+    {
+      "path": "late_arc_rebuild/rebuild_v2/promotion_proposal_2026-10-03/staging_option_A_contiguous_public_C48_C55/chapters/Chapter_55.md",
+      "bytes": 10766,
+      "sha256": "5478d9fd874f36e0d7e64e2c478becfc84ede27c78a553f88eb987ada193a855",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "Chapter 55 — The Price of Keeping"
+    },
+    {
+      "path": "late_arc_rebuild/rebuild_v2/promotion_proposal_2026-10-03/staging_option_A_contiguous_public_C48_C55/staging_manifest.json",
+      "bytes": 6117,
+      "sha256": "9fb0a9e271e8064bec2993c0b7d284b8bf921e56f94450de33c80c57837fb444",
+      "kind": "json",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "late_arc_rebuild/rebuild_v2/promotion_proposal_2026-10-03/staging_option_A_contiguous_public_C48_C55/validate_option_a_staging.py",
+      "bytes": 5167,
+      "sha256": "3511121aad96081568a87ed3f6c2ca03731d3ab2537037564261e10f85aecb6d",
+      "kind": "py",
+      "encoding": "utf-8"
+    },
+    {
       "path": "provenance/PUBLIC_GITHUB_FRESHNESS_CHECK_2026-09-29.md",
       "bytes": 5777,
       "sha256": "1af265b04b6a9037926f406cd835a3e2f4f3c332f1a3dff8ffe70809b4e08cde",
@@ -589,6 +1423,141 @@
       "sha256": "a37aecbd44513e0aa0e229a493d434ffbb9a4db24760f7b5498266184faca252",
       "kind": "txt",
       "encoding": "utf-8"
+    },
+    {
+      "path": "research/c48_c60_paragraph_map.txt",
+      "bytes": 295895,
+      "sha256": "0c1e4629ee92c55e5e3de092bcd20be3cb04d2375c2f2d9c264b1d1a977a94d9",
+      "kind": "txt",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "research/comic_official/cid149.html",
+      "bytes": 552676,
+      "sha256": "2958dd9064cfa762db2357057a09a45c5d4a87e50fbf91579b3004c0e0024a4c",
+      "kind": "html",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "research/comic_official/cid149.png",
+      "bytes": 318092,
+      "sha256": "9c356463a701e3cf73a65c61eecc3726a22240037c5a879a2108dd4e6748ced5",
+      "kind": "png",
+      "encoding": "binary-or-non-utf8"
+    },
+    {
+      "path": "research/map_c48.txt",
+      "bytes": 23814,
+      "sha256": "80d26e5745112ea24d4dafe96f6a77fc0e1d0fd7fbe3f1456f4ec59195046367",
+      "kind": "txt",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "research/map_c49.txt",
+      "bytes": 24562,
+      "sha256": "a10d93a2b4145289ff7fa1bcbf988f563abfbff942e2072f4f9a3906df412772",
+      "kind": "txt",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "research/map_c50.txt",
+      "bytes": 19925,
+      "sha256": "f78c013cc7abe208831db1913981cc090ab663d8f42fe693a4efd43d657621ec",
+      "kind": "txt",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "research/map_c51.txt",
+      "bytes": 25052,
+      "sha256": "145888758f53ebbd1c6b13b688a2301155674bd325ba4fcfacf52229b14d8ddb",
+      "kind": "txt",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "research/map_c52.txt",
+      "bytes": 19513,
+      "sha256": "b3efc2d001b6a776e9ee8ffb69411f5855d70b327a7006bf666672fbc0321b0f",
+      "kind": "txt",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "research/map_c53.txt",
+      "bytes": 26283,
+      "sha256": "bdffafbb5892513c5b709195238cbc98c835f90db279afaa418211bdea6b649e",
+      "kind": "txt",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "research/map_c54.txt",
+      "bytes": 24518,
+      "sha256": "83d460371ad214440ed64e48b23b250d512297d110350e94e7b80585276cc573",
+      "kind": "txt",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "research/map_c55.txt",
+      "bytes": 21866,
+      "sha256": "bf9d2af2f8dd62729f35f6bfb49a93e9f2dd8311b56acc8f961c7cee3df44fc8",
+      "kind": "txt",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "research/map_c56.txt",
+      "bytes": 18414,
+      "sha256": "994e968c989212bf65d9502c319944d8f882c92f672c84798096d79da885a829",
+      "kind": "txt",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "research/map_c57.txt",
+      "bytes": 24490,
+      "sha256": "857f8f8e5d90b44d15cac2895b232c3cc79eb9def0f0b96af9832cb7b9a74309",
+      "kind": "txt",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "research/map_c58.txt",
+      "bytes": 22635,
+      "sha256": "ea6a4849d311fe61b621a4118db6ca2352231bb35e4fb9f8da978d308190da17",
+      "kind": "txt",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "research/map_c59.txt",
+      "bytes": 22927,
+      "sha256": "e1b56b8eee9a7962d7fdf563ac70c613c71fe05871b6a25c2489b0bb19bbaa53",
+      "kind": "txt",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "research/map_c60.txt",
+      "bytes": 20310,
+      "sha256": "9fe01ed269941cfba9ab3f9dae9d5f8ecc3693a7eadcde6fa3c12b44f9f8f5c5",
+      "kind": "txt",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "research/song_luo_public_occurrences_c01_c47.txt",
+      "bytes": 34857,
+      "sha256": "2e3f93c04f1d5478fdebb58d215d1cf076f1361d023b33c39f18dfa5edeea23d",
+      "kind": "txt",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "semantic_audit/C48_C60_COMPLETE_CLAIM_LEVEL_SOURCE_AUDIT_2026-10-01.md",
+      "bytes": 50587,
+      "sha256": "73d068e4d36363008efb4d82243950d25cb32207c1b734ce3d2ecadb72508a82",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "C48–C60 Complete Claim-Level Source Audit"
+    },
+    {
+      "path": "semantic_audit/C48_C60_SOURCE_LEARNING_AND_DRAFT_DIAGNOSIS_2026-10-01.md",
+      "bytes": 38007,
+      "sha256": "873af3cadace7cc50e3c78d66236a571e4a6ef9cd538f4e571615d636ae1dd2c",
+      "kind": "md",
+      "encoding": "utf-8",
+      "h1": "C48–C60 Source-Learning Pass and Structural Draft Diagnosis"
     },
     {
       "path": "semantic_audit/CHAPTER_53_AUTHORIZATION_ADDENDUM_2026-09-27.md",
@@ -10166,9 +11135,61 @@
       "encoding": "utf-8"
     },
     {
+      "path": "tools/configure_github_remote.sh",
+      "bytes": 535,
+      "sha256": "effd0cbb440dbba5a30a19b1ed7daa4a1789ce53dd459d415b852c166e811a5a",
+      "kind": "sh",
+      "encoding": "utf-8",
+      "h1": "Restore the approved private GitHub origin when this sandbox's transient .git/config is reset."
+    },
+    {
+      "path": "tools/create_git_bundle_backup.sh",
+      "bytes": 807,
+      "sha256": "a3d07908a5de7df2e07698f1dbef5518e7a75193cc5cb86a4ced951a70fdbe99",
+      "kind": "sh",
+      "encoding": "utf-8",
+      "h1": "Create and verify a dated, local-only Git bundle backup. Invoke with: bash tools/create_git_bundle_backup.sh [output-dir]"
+    },
+    {
+      "path": "tools/install_local_hooks.sh",
+      "bytes": 764,
+      "sha256": "dd2ef0b500fa22d6805a2495cbb13a6cfc350ae56af8adfefe51a43fd70cba6b",
+      "kind": "sh",
+      "encoding": "utf-8",
+      "h1": "Install opt-in local Git hooks that run the complete Fire Phoenix validation suite."
+    },
+    {
       "path": "tools/recover_public_sources.py",
       "bytes": 9501,
       "sha256": "e4f733b0dd11f94ae761c89d720e214349361a8e7d7034cc5dfaff6828e1196e",
+      "kind": "py",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "tools/validate_all.py",
+      "bytes": 1568,
+      "sha256": "c8cad0c6f3e4031e930ca47cd610f08e011067b9884eb5e8f27268bc4d4c53f6",
+      "kind": "py",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "tools/validate_current_v2_line.py",
+      "bytes": 4803,
+      "sha256": "a7a1c4b62f6a45272c6a24d6c64cf2c40be4d56177fdf0f0d826db4f658dc3d7",
+      "kind": "py",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "tools/validate_github_governance.py",
+      "bytes": 5539,
+      "sha256": "a800b3ad2fe0bcd1d6a7865f2b7caff45a3eb5e8f7ef4fc9f8c6b52046a950e6",
+      "kind": "py",
+      "encoding": "utf-8"
+    },
+    {
+      "path": "tools/validate_local_accepted_v2_release.py",
+      "bytes": 4513,
+      "sha256": "dbc9077e3e2ba0cdcd075f46ee4a1965b8e52f4039fa7c0c1fb13e02c287a524",
       "kind": "py",
       "encoding": "utf-8"
     },
@@ -10232,8 +11253,8 @@
     },
     {
       "path": "tools/validate_replacement_line_48_60.py",
-      "bytes": 6362,
-      "sha256": "b44ed7ec827f1ac57e8375a6d3d69bab39df166bf9a3d063326d93a9ff54aa31",
+      "bytes": 6582,
+      "sha256": "eb52795909e9aaa028e503eed9be8484513e563dd2c4cf823bdea1e51d792970",
       "kind": "py",
       "encoding": "utf-8"
     },
